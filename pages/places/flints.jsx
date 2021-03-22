@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="p-12">
-        <h1 className="text-4xl text-center p-6">Flint's BBQ</h1>
+        <h1 className="text-4xl text-center p-6">Flint’s BBQ</h1>
         <h3 className="text-2xl">3114 San Pablo Ave</h3>
 
         <Image className="float-right" src="/places/flints.jpg" height={300} width={300} />
@@ -35,9 +35,13 @@ This Flint’s location closed in the late 1980s after several of the family mem
           <source src="/audio/flints.mp3" type="audio/mpeg"/>
           Your browser does not support the audio element.
         </audio>
-        <Link href="/places/nextstop"><a className="btn py-1">Go to the next stop!</a></Link>
+        <h2 className="text-3xl mt-12">Links</h2>
+        <h4 className="text-xl my-1"><a href="https://clownfish-lime-9b27.squarespace.com/">Flint’s BBQ Website</a></h4>
+        <h4 className="text-xl mt-1 mb-12"><a href="https://facebook.com/originalflintsbbq/">Flint’s BBQ on Facebook</a></h4>
+        <Link href="/places/nextstop">
+          <a className="btn py-1">Go to the next stop!</a>
+        </Link>
       </main>
-
       <footer className="">
       </footer>
     </div>
