@@ -14,7 +14,7 @@ export default function Home() {
         <h1 className="text-4xl text-center p-6">Flint’s BBQ</h1>
         <h3 className="text-2xl">3114 San Pablo Ave</h3>
 
-        <Image className="float-right" src="/places/flints.jpg" height={300} width={300} />
+        <Image className="float-right" src="/places/flints.jpg" height={222} width={300} />
 
         <p className="my-3">
           Close your eyes and imagine the sweet, smokey smell of ribs and hot links wafting out of this building and drawing a hungry crowd of BBQ lovers. Throughout the 1970s and 80s it wasn’t uncommon to see people lined up along San Pablo Ave. to get a precious plate of family-cooked food here.
