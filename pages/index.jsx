@@ -19,8 +19,6 @@ export default function Home() {
         <p className="text-center mb-6 text-xl">
           A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking
           Tour captures oral histories to document the knowledge and memories of long-time residents,  historical figures,
-          and former Black spaces. We're galvanizing collaborative development efforts grounded in local Black History and
-          working towards the 2022 reopening of the Hoover Durant Public Library branch in our neighborhood, public art,
           and former Black spaces. We're galvanizing collaborative development efforts grounded in local Black History
           and working towards the reestablishment of the Hoover Durant Public Library branch in our neighborhood.
         </p>
