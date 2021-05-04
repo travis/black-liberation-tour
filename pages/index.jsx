@@ -13,14 +13,17 @@ export default function Home() {
       <main className="p-12 max-w-5xl m-auto">
         <h1 className="text-5xl text-center p-6">Black Liberation Walking Tour</h1>
         <p className="text-center mb-6 text-xl">
-          The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s Black and
-          multigenerational history, asserts resident voice, and documents sites of cultural and historical importance of our neighborhood.
+          Black Spaces Matter.  The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
+          multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and historical importance
+          of our neighborhood. We celebrate belonging through the 100 year narrative ribbon that leads from the early West Coast civil
+          rights movement through the second wave of the Great Migration to the Black Liberation actions of the present day.
         </p>
         <p className="text-center mb-6 text-xl">
-          A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking
-          Tour captures oral histories to document the knowledge and memories of long-time residents,  historical figures,
-          and former Black spaces. We're galvanizing collaborative development efforts grounded in local Black History
-          and working towards the reestablishment of the Hoover Durant Public Library branch in our neighborhood.
+          A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour captures oral
+          histories to document the lives and culture of long-time residents,  historical figures, and rapidly disappearing former
+          Black spaces. We are creating this archive to mitigate cultural erasure and physical displacement. We're galvanizing a
+          collaborative development effort grounded in claiming community and cultural spaces by working towards the reestablishment of the
+          Hoover Durant Public Library branch in our neighborhood and acquiring community controlled commercial spaces.
         </p>
         <p className="text-center mb-6 text-xl">
           For press inquiries or ways to support, please email <a href="mailto:oakblwt@gmail.com">oakblwt@gmail.com</a>
