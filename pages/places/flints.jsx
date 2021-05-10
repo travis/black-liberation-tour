@@ -5,11 +5,6 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="">
-      <Head>
-        <title>Black Liberation Tour: Flint’s BBQ</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Flint’s BBQ</h1>
         <h3 className="text-2xl">3114 San Pablo Ave</h3>

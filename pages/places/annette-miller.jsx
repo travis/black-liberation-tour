@@ -5,11 +5,6 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="">
-      <Head>
-        <title>Black Liberation Tour: Annette Miller</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Annette Miller</h1>
         <h3 className="text-2xl">682 30th St, Oakland</h3>

@@ -27,6 +27,16 @@ export default function Home() {
               </div>
             </a>
           </Link>
+          <Link href="/places/northwest-ymca">
+            <a className="p-6">
+              <div>
+                <h2 className="text-3xl text-center mb-6">
+                  Northwest Branch YMCA
+                </h2>
+                <Image src="/places/northwest-ymca.jpg" height={241} width={300} />
+              </div>
+            </a>
+          </Link>
         </div>
       </main>
 
