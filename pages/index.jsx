@@ -68,7 +68,7 @@ export default function Home() {
         <div className="relative h-96">
           <Image src="/places/flints.jpg" layout="fill"></Image>
         </div>
-        <div>
+        <div className={`${!moreHidden && 'hidden'}`}>
 
         </div>
         <div className="p-6 h-96">
