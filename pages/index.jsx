@@ -45,18 +45,21 @@ export default function Home() {
           <p>
             <h3 className="text-3xl mb-6 font-serif ml-3">Stations:</h3>
             <ul className="text-2xl">
-              <li className="border-b-2 border-black">
+              <li className="pl-3">
+                Coming Soon
+              </li>
+              <li className="border-b-2 border-black hidden">
                 <Link href="/places/flints">
                   <a className="no-underline text-black block pl-3">Flint's BBQ</a>
                 </Link>
               </li>
-              <li className="border-b-2 border-black pl-3">
+              <li className="border-b-2 border-black pl-3 hidden">
                 California Hotel
               </li>
-              <li className="border-b-2 border-black pl-3">
+              <li className="border-b-2 border-black pl-3 hidden">
                 Mural
               </li>
-              <li className="pl-3">
+              <li className="pl-3 hidden">
                 More Sites
               </li>
             </ul>
