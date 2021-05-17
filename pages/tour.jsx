@@ -54,6 +54,16 @@ export default function Home() {
               </div>
             </a>
           </Link>
+          <Link href="/places/delilah-beasley-house">
+            <a className="p-6">
+              <div>
+                <h2 className="text-3xl text-center mb-6">
+                  Delilah Beasley House
+                </h2>
+                <Image src="/places/delilah-beasley-house.jpg" height={380} width={300} />
+              </div>
+            </a>
+          </Link>
         </div>
       </main>
 
