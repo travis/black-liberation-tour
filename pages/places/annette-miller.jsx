@@ -30,8 +30,8 @@ export default function Home() {
           <source src="/audio/flints.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
-        <Link href="/places/nextstop">
-          <a className="btn py-1">Go to the next stop!</a>
+        <Link href="/places/freeways">
+          <a className="btn py-1">Next Stop: Surrounded By Freeways</a>
         </Link>
       </main>
       <footer className="">

@@ -30,6 +30,9 @@ export default function Home() {
           <source src="/audio/delilah-beasley-house.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
+        <Link href="/places/cl-dellums">
+          <a className="btn py-1">Next Stop: C.L. Dellums</a>
+        </Link>
       </main>
       <footer className="">
       </footer>

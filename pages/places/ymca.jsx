@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="text-4xl text-center p-6">Northwest Branch YMCA</h1>
         <h3 className="text-2xl">Corner of Brockhurst and Market</h3>
 
-        <Image className="float-right" src="/places/northwest-ymca.jpg" height={241} width={300} />
+        <Image className="float-right" src="/places/ymca.jpg" height={241} width={300} />
 
         <p className="my-3">
           In the early 1940s, there wasn’t a single Black person on Oakland’s City Council or serving at any level of city government. By 1977, a single generation later, Lionel Wilson was elected as Oakland’s first Black mayor and African Americans were represented on City Council and throughout local politics. This YMCA that you’re standing in front of right now was a major force behind this transformation — and Josh Rose was one of the neighborhood leaders who helped build this institution.
@@ -28,11 +28,11 @@ export default function Home() {
           Press PLAY below to hear Mary Ellen Butler discuss the history of the Northwest Branch YMCA as an incubator of rising Black leadership.
         </p>
         <audio controls className="my-12">
-          <source src="/audio/northwest-ymca.mp3" type="audio/mpeg"/>
+          <source src="/audio/ymca.mp3" type="audio/mpeg"/>
           Your browser does not support the audio element.
         </audio>
-        <Link href="/places/nextstop">
-          <a className="btn py-1">Go to the next stop!</a>
+        <Link href="/places/north-oakland-library">
+          <a className="btn py-1">Next Stop: North Oakland Branch Library</a>
         </Link>
       </main>
       <footer className="">
