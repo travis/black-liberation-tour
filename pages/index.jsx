@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { DownChevron, Close } from '../components/icons'
+import { DownChevron, Close, Cap } from '../components/icons'
 
 export default function Home() {
   const [moreHidden, setMoreHidden] = useState(true)
@@ -10,7 +10,7 @@ export default function Home() {
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-black text-white min-h-screen">
         <div className="py-12 px-20 h-96">
           <h1 className="text-5xl text-center font-serif uppercase py-6 border-t-4 border-b-4">
-            Black Liberation Walking Tour
+            Black Liberation Walking Tour <Cap/>
           </h1>
           <h5 className="uppercase text-center text-yellow-600 mt-6">
             Hoover-Durant Public Library
