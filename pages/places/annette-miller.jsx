@@ -1,14 +1,17 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import DirectionsButton from '../../components/DirectionsButton'
+import { tourStop } from '../../lib/data'
 
 export default function Home() {
   return (
     <div className="">
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Annette Miller</h1>
-        <h3 className="text-2xl">682 30th St, Oakland</h3>
-
+        <div className="flex">
+          <h3 className="text-2xl">682 30th St, Oakland</h3>
+          <DirectionsButton from={tourStop['st-augustines']} to={tourStop['annette-miller']} />
+        </div>
         <Image className="float-right" src="/places/annette-miller.jpg" height={200} width={300} />
 
         <p className="my-3">
@@ -27,7 +30,7 @@ export default function Home() {
           Back in 2006, Annette’s uncle had refinanced that house and then died unexpectedly without leaving a will. When the bank eventually learned of this situation in 2014, they attempted to evict the Miller family. However, drawing upon her skills as a community organizer, Annette sought assistance from the Department of Veterans Affairs and ACCE (Alliance of Californians for Community Empowerment), to challenge the foreclosure. Click the button below to hear the story of what happened during Annete’s showdown with a massive international financial institution.
         </p>
         <audio controls className="my-12">
-          <source src="/audio/flints.mp3" type="audio/mpeg" />
+          <source src="/audio/annette-miller.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <Link href="/places/freeways">

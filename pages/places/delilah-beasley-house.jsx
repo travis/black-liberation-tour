@@ -1,14 +1,17 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import DirectionsButton from '../../components/DirectionsButton'
+import { tourStop } from '../../lib/data'
 
 export default function Home() {
   return (
     <div className="">
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Delilah Beasley House</h1>
-        <h3 className="text-2xl">705 34th Street</h3>
-
+        <div className="flex">
+          <h3 className="text-2xl">705 34th Street</h3>
+          <DirectionsButton from={tourStop['freeways']} to={tourStop['delilah-beasley-house']} />
+        </div>
         <Image className="float-right" src="/places/delilah-beasley-house.jpg" height={380} width={300} />
 
         <p className="my-3">

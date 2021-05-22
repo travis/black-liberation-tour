@@ -2,19 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Map from '../components/Map'
 
-const thirtiethAndWest = [37.820064, -122.273499]
-
-
-const tourLocations = [
-  [37.817330852742, -122.27412728836, "St. Augustine's Episcopal Church", "2624 West Street", "st-augustines"],
-  [37.819864610235, -122.27185963988, "Annette Miller", "682 30th Street", "annette-miller"],
-  [37.82336033834,  -122.27013845278, "Surrounded by Freeways", "34th and Martin Luther King, Jr. Way", "freeways"],
-  [37.823640732162, -122.27132017791, "Delilah Beasley House", "705 34th Street", "delilah-beasley-house"],
-  [37.822756447119, -122.27385750675, "C.L. Dellums", "829 Brockhurst", "cl-dellums"],
-  [37.823201695257, -122.27571344477, "Northwest Branch YMCA", "Market and Brockhurst", "ymca"],
-  [37.820612790318, -122.27630889563, "North Oakland Branch Library", "30th and San Pablo", "north-oakland-library"],
-  [37.821904350144, -122.27679258347, "Flint's Bar-B-Q", "3114 San Pablo Avenue", "flints"]
-]
+import { center, tourLocations } from "../lib/data"
 
 
 export default function Home() {
@@ -22,7 +10,7 @@ export default function Home() {
     <div className="">
       <main className="p-12">
         <h1 className="text-6xl text-center p-6">Black Liberation Walking Tour</h1>
-        <Map className="h-96" zoom={15} center={thirtiethAndWest} markers={tourLocations}/>
+        <Map className="h-96" zoom={15} center={center} markers={tourLocations}/>
         <div className="mt-12 flex flex-row">
         <Link href="/places/st-augustines">
             <a className="p-6">

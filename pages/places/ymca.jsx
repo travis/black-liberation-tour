@@ -1,13 +1,17 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import DirectionsButton from '../../components/DirectionsButton'
+import { tourStop } from '../../lib/data'
 
 export default function Home() {
   return (
     <div className="">
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Northwest Branch YMCA</h1>
-        <h3 className="text-2xl">Corner of Brockhurst and Market</h3>
+        <div className="flex">
+          <h3 className="text-2xl">Corner of Brockhurst and Market</h3>
+          <DirectionsButton from={tourStop['cl-dellums']} to={tourStop['ymca']} />
+        </div>
 
         <Image className="float-right" src="/places/ymca.jpg" height={241} width={300} />
 
@@ -28,7 +32,7 @@ export default function Home() {
           Press PLAY below to hear Mary Ellen Butler discuss the history of the Northwest Branch YMCA as an incubator of rising Black leadership.
         </p>
         <audio controls className="my-12">
-          <source src="/audio/ymca.mp3" type="audio/mpeg"/>
+          <source src="/audio/ymca.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <Link href="/places/north-oakland-library">

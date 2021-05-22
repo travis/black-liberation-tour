@@ -1,14 +1,18 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import DirectionsButton from '../../components/DirectionsButton'
+import { tourStop } from '../../lib/data'
 
 export default function Home() {
   return (
     <div className="">
       <main className="p-12">
         <h1 className="text-4xl text-center p-6">Flint’s BBQ</h1>
-        <h3 className="text-2xl">3114 San Pablo Ave</h3>
+        <div className="flex">
+          <h3 className="text-2xl">3114 San Pablo Ave</h3>
 
+          <DirectionsButton from={tourStop['north-oakland-library']} to={tourStop['flints']} />
+        </div>
         <Image className="float-right" src="/places/flints.jpg" height={222} width={300} />
 
         <p className="my-3">
@@ -20,14 +24,14 @@ export default function Home() {
         </p>
 
         <p className="my-3">
-According to local BBQ connoisseurs, the secret to Flint’s success was the sauce, which remains a closely guarded secret to this day. Customers loved the sauce so much that many would ask for it to be poured on the potato salad and even mop it out of to-go bags with the slices of white bread that accompanied every order.
+          According to local BBQ connoisseurs, the secret to Flint’s success was the sauce, which remains a closely guarded secret to this day. Customers loved the sauce so much that many would ask for it to be poured on the potato salad and even mop it out of to-go bags with the slices of white bread that accompanied every order.
         </p>
 
         <p className="my-3">
-This Flint’s location closed in the late 1980s after several of the family members who were running it passed away, but there is now hope for a revival, because the younger generation is working to rebuild the business. Crystal Martin was barely old enough to help peel potatoes when the restaurant closed, but seeing this empty building always filled her with the desire to rekindle her grandfather Willie’s legacy. Along with her sister Lynette, who worked here while she was a student at McClymonds High School, Crystal is currently hosting a series of BBQ popup events to build momentum for a true rebirth of Flint’s. Press play below to hear Lynette and Crystal share memories of family history and hopes for the future.
+          This Flint’s location closed in the late 1980s after several of the family members who were running it passed away, but there is now hope for a revival, because the younger generation is working to rebuild the business. Crystal Martin was barely old enough to help peel potatoes when the restaurant closed, but seeing this empty building always filled her with the desire to rekindle her grandfather Willie’s legacy. Along with her sister Lynette, who worked here while she was a student at McClymonds High School, Crystal is currently hosting a series of BBQ popup events to build momentum for a true rebirth of Flint’s. Press play below to hear Lynette and Crystal share memories of family history and hopes for the future.
         </p>
         <audio controls className="my-12">
-          <source src="/audio/flints.mp3" type="audio/mpeg"/>
+          <source src="/audio/flints.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <h2 className="text-3xl mt-12">Links</h2>
