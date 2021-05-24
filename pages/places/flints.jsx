@@ -37,6 +37,10 @@ export default function Home() {
         <h2 className="text-3xl mt-12">Links</h2>
         <h4 className="text-xl my-1"><a href="https://clownfish-lime-9b27.squarespace.com/">Flint’s BBQ Website</a></h4>
         <h4 className="text-xl mt-1 mb-12"><a href="https://facebook.com/originalflintsbbq/">Flint’s BBQ on Facebook</a></h4>
+          
+        <Link href="/places/california-hotel">
+          <a className="btn py-1">Next Stop: California Hotel</a>
+        </Link>
       </main>
       <footer className="">
       </footer>
