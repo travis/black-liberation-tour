@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { DownChevron, Close } from '../components/icons'
@@ -42,28 +43,26 @@ export default function Home() {
           )}
         </div>
         <div className="bg-yellow-600 text-black uppercase py-20 px-16 h-96">
-          <p>
-            <h3 className="text-3xl mb-6 font-serif ml-3">Stations:</h3>
-            <ul className="text-2xl">
-              <li className="pl-3">
-                Coming Soon
+          <h3 className="text-3xl mb-6 font-serif ml-3">Stations:</h3>
+          <ul className="text-2xl">
+            <li className="pl-3">
+              Coming Soon
               </li>
-              <li className="border-b-2 border-black hidden">
-                <Link href="/places/flints">
-                  <a className="no-underline text-black block pl-3">Flint's BBQ</a>
-                </Link>
+            <li className="border-b-2 border-black hidden">
+              <Link href="/places/flints">
+                <a className="no-underline text-black block pl-3">Flint's BBQ</a>
+              </Link>
+            </li>
+            <li className="border-b-2 border-black pl-3 hidden">
+              California Hotel
               </li>
-              <li className="border-b-2 border-black pl-3 hidden">
-                California Hotel
+            <li className="border-b-2 border-black pl-3 hidden">
+              Mural
               </li>
-              <li className="border-b-2 border-black pl-3 hidden">
-                Mural
+            <li className="pl-3 hidden">
+              More Sites
               </li>
-              <li className="pl-3 hidden">
-                More Sites
-              </li>
-            </ul>
-          </p>
+          </ul>
         </div>
         <div className="relative h-96">
           <Image src="/places/flints.jpg" layout="fill"></Image>
@@ -77,7 +76,17 @@ export default function Home() {
           </p>
           <p className="mb-6 text-xl">
             To volunteer or suggest stories,<br /> fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJGmJ4yErUyeOpQ3aMYhCmjG100gxedC_YzVJ6X77L34ygtw/viewform">our brief survey</a>.
-        </p>
+          </p>
+          <div>
+            <form action="https://blwt.us6.list-manage.com/subscribe/post?u=4a8461aa6093c9aa9880f2190&amp;id=566be82014" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+              <label htmlFor="mce-EMAIL" className="text-xl block">Subscribe to our newsletter:</label>
+              <input type="email" name="EMAIL" className="p-2 my-2" id="mce-EMAIL" placeholder="email address" required />
+              <div style={{ position: 'absolute', left: "-5000px" }} aria-hidden="true">
+                <input type="text" name="b_4a8461aa6093c9aa9880f2190_566be82014" tabIndex="-1" value="" readOnly />
+              </div>
+              <input type="submit" value="Subscribe" name="subscribe" className="btn block" readOnly/>
+            </form>
+          </div>
         </div>
       </main>
 
