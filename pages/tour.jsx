@@ -92,6 +92,16 @@ export default function Home() {
               </div>
             </a>
           </Link>
+          <Link href="/places/california-hotel">
+            <a className="p-6">
+              <div>
+                <h2 className="text-3xl text-center mb-6">
+                  California Hotel
+                </h2>
+                <Image src="/places/california-hotel.jpg" height={222} width={300} />
+              </div>
+            </a>
+          </Link>
         </div>
       </main>
 
