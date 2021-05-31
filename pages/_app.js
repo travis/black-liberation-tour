@@ -13,6 +13,18 @@ function MyApp({ Component, pageProps }) {
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
           integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
           crossorigin=""></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVMS731GQN" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PVMS731GQN');
+          `,
+          }}
+        />
       </Head>
       <Component {...pageProps} />
     </>
