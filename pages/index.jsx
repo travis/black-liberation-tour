@@ -17,7 +17,7 @@ export default function Home() {
             Hoover-Durant Public Library
           </h5>
         </div>
-        <div className={`py-12 px-6 h-96 ${!moreHidden && 'row-span-2'}`}>
+        <div className={`py-12 px-6 min-h-96 ${!moreHidden && 'row-span-2'}`}>
           <h4 className="uppercase text-xl font-bold">Black Spaces Matter.</h4>
           <p className="mb-6">
             The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
@@ -64,11 +64,15 @@ export default function Home() {
               </li>
           </ul>
         </div>
-        <div className="relative h-96">
+        <div className={`relative h-96 ${!moreHidden && 'md:hidden xl:block'}`}>
           <Image src="/places/flints.jpg" layout="fill"></Image>
         </div>
-        <div className={`${!moreHidden && 'hidden'}`}>
-
+        <div className={`py-12 px-6 ${!moreHidden && 'xl:hidden'}`}>
+          <h3 className="text-xl uppercase font-bold">Black Liberation Walking Tour <br /> Launch Party</h3>
+          <p className="my-12">
+            Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
+          </p>
+          <a className="text-xl no-underline" href="https://www.facebook.com/events/572413663743456">RSVP on the Event Page</a>
         </div>
         <div className="p-6 h-96">
           <p className="mb-6 text-xl">
