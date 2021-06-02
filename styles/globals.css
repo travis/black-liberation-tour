@@ -11,4 +11,12 @@ a {
 
 }
 
+.station-name {
+    @apply text-lg p-3 text-black no-underline border-b-2 border-black uppercase;
+}
+
+.station-name:hover {
+    @apply font-bold;
+}
+
 @tailwind utilities;
