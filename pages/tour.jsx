@@ -82,14 +82,19 @@ export default function Tour() {
               </a>
             </Link>
           </div>
-          <div className="px-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-yellow-600">
+          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-yellow-600">
+            <Link href="/places/north-oakland-library">
+              <a className="col-start-1 col-span-5">
+                <Image src="/places/north-oakland-library.jpg" height={222} width={300} />
+              </a>
+            </Link>
             <Link href="/places/st-augustines">
               <a className="col-start-9 col-span-4">
-                <Image src="/places/st-augustines.jpg" height={222} width={300} />
+                <Image src="/places/st-augustines.jpg" height={342} width={300} />
               </a>
             </Link>
             <Link href="/places/annette-miller">
-              <a className="col-start-3 col-span-8">
+              <a className="col-start-3 col-span-6">
                 <Image src="/places/annette-miller.jpg" height={200} width={300} />
               </a>
             </Link>
@@ -99,8 +104,13 @@ export default function Tour() {
               </a>
             </Link>
             <Link href="/places/freeways">
-              <a>
-                <Image src="/places/freeways.jpg" height={222} width={300} />
+              <a className="col-start-7 col-span-6 ">
+                <Image src="/places/freeways.jpg" height={150} width={300} />
+              </a>
+            </Link>
+            <Link href="/places/cl-dellums">
+              <a className="col-start-2 col-span-6">
+                <Image src="/places/cl-dellums.jpg" height={220} width={300} />
               </a>
             </Link>
             <Link href="/places/delilah-beasley-house">
@@ -108,19 +118,10 @@ export default function Tour() {
                 <Image src="/places/delilah-beasley-house.jpg" height={380} width={300} />
               </a>
             </Link>
-            <Link href="/places/cl-dellums">
-              <a className="">
-                <Image src="/places/cl-dellums.jpg" height={222} width={300} />
-              </a>
-            </Link>
+
             <Link href="/places/ymca">
               <a className="col-start-3 col-span-6">
                 <Image src="/places/ymca.jpg" height={241} width={300} />
-              </a>
-            </Link>
-            <Link href="/places/north-oakland-library">
-              <a>
-                <Image src="/places/north-oakland-library.jpg" height={222} width={300} />
               </a>
             </Link>
             <Link href="/places/california-hotel">
