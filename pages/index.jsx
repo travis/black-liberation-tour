@@ -57,7 +57,7 @@ export default function Home() {
             RSVP on the Event Page
            </a>
         </div>
-        <div className={`h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:block'}`}>
+        <div className={`h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:flex'}`}>
           <h3 className="text-3xl m-auto font-display underline border-white border-2 px-6 py-3">Tour Coming Soon</h3>
         </div>
         <div className={`p-6 h-96 bg-red-dark ${!moreHidden && 'xl:hidden'}`}>
