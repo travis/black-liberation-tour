@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { DownChevron, Close, Facebook, Instagram } from '../components/icons'
+import ContactDonateSection from '../components/ContactDonateSection'
+import SubscribeFollowSection from '../components/SubscribeFollowSection'
 
 export default function Home() {
   const [moreHidden, setMoreHidden] = useState(true)
@@ -75,32 +77,8 @@ export default function Home() {
           <a className="text-xl no-underline" href="https://www.facebook.com/events/572413663743456">RSVP on the Event Page</a>
         </div>
         <div className="p-6 h-96">
-          <p className="mb-6 text-xl">
-            For press inquiries or ways to support,<br /> please email <a href="mailto:oakblwt@gmail.com">oakblwt@gmail.com</a>
-          </p>
-          <p className="mb-6 text-xl">
-            To volunteer or suggest stories,<br /> fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJGmJ4yErUyeOpQ3aMYhCmjG100gxedC_YzVJ6X77L34ygtw/viewform">our brief survey</a>.
-          </p>
-          <div>
-            <form action="https://blwt.us6.list-manage.com/subscribe/post?u=4a8461aa6093c9aa9880f2190&amp;id=566be82014" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-              <label htmlFor="mce-EMAIL" className="text-xl block">Subscribe to our newsletter:</label>
-              <div className="flex flex-row gap-4 my-2">
-                <input type="email" name="EMAIL" className="p-2" id="mce-EMAIL" placeholder="email address" required />
-                <input type="submit" value="Subscribe" name="subscribe" className="btn" readOnly />
-              </div>
-              <div style={{ position: 'absolute', left: "-5000px" }} aria-hidden="true">
-                <input type="text" name="b_4a8461aa6093c9aa9880f2190_566be82014" tabIndex="-1" value="" readOnly />
-              </div>
-            </form>
-          </div>
-          <div className="flex flex-row gap-4 mt-6">
-            <a href="https://www.facebook.com/OakBLWT/" aria-label="BLWT Facebook Page">
-              <Facebook className="w-12 h-12" />
-            </a>
-            <a href="https://www.instagram.com/oakblwt/" aria-label="BLWT Instagram">
-              <Instagram className="w-12 h-12" />
-            </a>
-          </div>
+          <ContactDonateSection/>
+          <SubscribeFollowSection/>
         </div>
       </main>
 
