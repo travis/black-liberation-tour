@@ -1,89 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
-import ContactDonateSection from '../../components/ContactSection'
-import SubscribeFollowSection from '../../components/SubscribeFollowSection'
 import { tourStop } from '../../lib/data'
 
-function TourStopHeader({ name, location, from, to }) {
-  return (
-    <>
-      <h1 className="text-5xl text-red mt-24 font-display">
-        <Link href="/">
-          <a className="no-underline">
-          {name}
-          </a>
-        </Link>
-      </h1>
-      <h3 className="text-lg mb-4 italic">{location}</h3>
-      <DirectionsButton from={from} to={to} />
-    </>
-  )
-}
-
-function TourStopFooter({ }) {
-  return (
-    <footer className="grid grid-cols-3 bg-red-dark text-pink">
-      <div className="relative">
-        <span className="absolute left-6 bottom-6 uppercase">
-          Black Liberation Walking Tour
-        </span>
-      </div>
-      <div className="py-12 px-6">
-        <ContactDonateSection />
-      </div>
-      <div className="py-12 px-6">
-        <SubscribeFollowSection />
-      </div>
-    </footer>
-  )
-}
-
-function TourStopLogo({ className, ...props }) {
-  return (
-    <div className={`uppercase font-bold bg-red text-center p-12 text-red-light text-xl mb-6 ${className}`} {...props}>
-      Black Liberation<br /> Walking Tour
-    </div>
-  )
-}
-
-function TourStop({ children }) {
-  return (
-    <>
-      <main className="grid grid-cols-12">
-        {children}
-      </main>
-      <TourStopFooter />
-    </>
-  )
-}
-
-function TourAudio({ src, ...props }) {
-  return (
-    <audio controls {...props}>
-      <source src={src} type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-  )
-}
-
-function TourStopIntro({ className, ...props }) {
-  return (
-    <section className={`text-center bg-yellow col-span-4 ${className}`} {...props} />
-  )
-}
-
-function TourStopContent({ className, ...props }) {
-  return (
-    <section className={`mx-12 col-span-5 ${className}`} {...props} />
-  )
-}
-
-function TourStopMedia({ className, ...props }) {
-  return (
-    <section className={`flex flex-col justify-between col-span-3 ${className}`} {...props} />
-  )
-}
+import {
+   TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
+   TourStopMedia, TourAudio
+ } from '../../components/tour'
 
 
 export default function AnnetteMiller() {

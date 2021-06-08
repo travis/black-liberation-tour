@@ -1,20 +1,23 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
 import { tourStop } from '../../lib/data'
+import {
+  TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
+  TourStopMedia, TourAudio
+} from '../../components/tour'
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="p-12">
-        <h1 className="text-4xl text-center p-6">California Hotel</h1>
-        <div className="flex">
-          <h3 className="text-2xl">35th and San Pablo</h3>
-          <DirectionsButton from={tourStop['flints']} to={tourStop['california-hotel']} />
-        </div>
-
-        <Image className="float-right" src="/places/california-hotel.png" height={200} width={300} />
-
+    <TourStop>
+      <TourStopIntro>
+        <TourStopLogo />
+        <Image src="/places/california-hotel.png" height={200} width={300} />
+      </TourStopIntro>
+      <TourStopContent>
+        <TourStopHeader
+          name="California Hotel"
+          location="35th and San Pablo"
+          from={tourStop['flints']} to={tourStop['california-hotel']}
+        />
         <p className="my-3">
           Few buildings reflect the past century of Oakland’s ever-shifting culture better than the California Hotel. When it opened in 1930, the hotel was intended to serve travelers arriving to the East Bay on the Santa Fe Railroad, which operated a thriving depot a few blocks north at the intersection of San Pablo Ave. and 40th St. During this era of strict racial segregation, only whites were allowed to stay here.
         </p>
@@ -29,10 +32,15 @@ export default function Home() {
         <p className="my-3">
           Although the early 2000s was a challenging time at the California Hotel, former resident Alan Laird still has fond memories of his time here. Born and raised in Oakland, Laird operated Expressions Art Gallery in the space formerly occupied by the Zanzibar Club for about five years after being priced out of Old Oakland. In addition to being a painter, Laird is also a minister in the African Methodist Episcopal Church. Click PLAY below to hear Laird explain how he combined his spiritual and artistic practices to turn Expressions Art Gallery into a much-needed community resource.
         </p>
-        <audio controls className="my-12">
-          <source src="/audio/california-hotel.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
+
+
+      </TourStopContent>
+      <TourStopMedia>
+        <div></div>
+        <TourAudio className="my-12" src="/audio/california-hotel.mp3" />
+      </TourStopMedia>
+      <TourStopIntro />
+      <TourStopContent className="mt-6">
         <p className="my-3">
           Join the Friends of Hoover Durant Public Library to celebrate the launch of this walking tour, and come share your story about the neighborhood! There will be food, music, and more!
         </p>
@@ -46,9 +54,9 @@ export default function Home() {
             <dd>Friends of Hoover Durant Public Library</dd>
           </dl>
         </p>
-      </main>
-      <footer className="">
-      </footer>
-    </div>
+      </TourStopContent>
+      <div>
+      </div>
+    </TourStop>
   )
 }
