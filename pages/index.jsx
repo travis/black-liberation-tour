@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { DownChevron, Close, Facebook, Instagram } from '../components/icons'
-import ContactDonateSection from '../components/ContactDonateSection'
+import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
 
 export default function Home() {
@@ -12,12 +12,15 @@ export default function Home() {
     <div className="">
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-black text-white min-h-screen">
         <div className="py-12 px-20 h-96">
-          <h1 className="text-5xl text-center font-serif uppercase py-6 border-t-4 border-b-4">
+          <h1 className="text-5xl text-center font-display uppercase py-6 border-t-4 border-b-4">
             Black Liberation Walking Tour
           </h1>
           <h5 className="uppercase text-center text-yellow-600 mt-6">
             Hoover-Durant Public Library
           </h5>
+        </div>
+        <div className={`relative h-96`}>
+          <Image src="/places/flints.jpg" layout="fill"></Image>
         </div>
         <div className={`py-12 px-6 min-h-96 ${!moreHidden && 'row-span-2'}`}>
           <h4 className="uppercase text-xl font-bold">Black Spaces Matter.</h4>
@@ -44,41 +47,22 @@ export default function Home() {
             </button>
           )}
         </div>
-        <div className="bg-yellow-600 text-black uppercase py-20 px-16 h-96">
-          <h3 className="text-3xl mb-6 font-serif ml-3">Stations:</h3>
-          <ul className="text-2xl">
-            <li className="pl-3">
-              Coming Soon
-              </li>
-            <li className="border-b-2 border-black hidden">
-              <Link href="/places/flints">
-                <a className="no-underline text-black block pl-3">Flint's BBQ</a>
-              </Link>
-            </li>
-            <li className="border-b-2 border-black pl-3 hidden">
-              California Hotel
-              </li>
-            <li className="border-b-2 border-black pl-3 hidden">
-              Mural
-              </li>
-            <li className="pl-3 hidden">
-              More Sites
-              </li>
-          </ul>
-        </div>
-        <div className={`relative h-96 ${!moreHidden && 'md:hidden xl:block'}`}>
-          <Image src="/places/flints.jpg" layout="fill"></Image>
-        </div>
-        <div className={`py-12 px-6 ${!moreHidden && 'xl:hidden'}`}>
-          <h3 className="text-xl uppercase font-bold">Black Liberation Walking Tour <br /> Launch Party</h3>
+        <div className={`py-12 px-12 bg-red-dark`}>
+          <h3 className="text-xl uppercase font-bold">Black Liberation Walking<br /> Tour Launch Party</h3>
           <p className="my-12">
             Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
           </p>
-          <a className="text-xl no-underline" href="https://www.facebook.com/events/572413663743456">RSVP on the Event Page</a>
+          <a className="btn bg-pink-dark text-black font-display"
+             href="https://www.facebook.com/events/572413663743456">
+            RSVP on the Event Page
+           </a>
         </div>
-        <div className="p-6 h-96">
-          <ContactDonateSection/>
-          <SubscribeFollowSection/>
+        <div className={`h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:block'}`}>
+          <h3 className="text-3xl m-auto font-display underline border-white border-2 px-6 py-3">Tour Coming Soon</h3>
+        </div>
+        <div className={`p-6 h-96 bg-red-dark ${!moreHidden && 'xl:hidden'}`}>
+          <ContactSection />
+          <SubscribeFollowSection />
         </div>
       </main>
 

@@ -20,3 +20,9 @@ a {
 }
 
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Formata';
+    font-weight: 400;
+    src: url('./fonts/formata/Formata-Regular.ttf');
+  }

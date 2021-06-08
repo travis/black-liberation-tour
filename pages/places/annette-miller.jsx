@@ -1,14 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import DirectionsButton from '../../components/DirectionsButton'
-import ContactDonateSection from '../../components/ContactDonateSection'
+import ContactDonateSection from '../../components/ContactSection'
 import SubscribeFollowSection from '../../components/SubscribeFollowSection'
 import { tourStop } from '../../lib/data'
 
 function TourStopHeader({ name, location, from, to }) {
   return (
     <>
-      <h1 className="text-5xl text-red mt-24">{name}</h1>
+      <h1 className="text-5xl text-red mt-24 font-display">
+        <Link href="/">
+          <a className="no-underline">
+          {name}
+          </a>
+        </Link>
+      </h1>
       <h3 className="text-lg mb-4 italic">{location}</h3>
       <DirectionsButton from={from} to={to} />
     </>
@@ -109,7 +115,7 @@ export default function AnnetteMiller() {
 
         <p className="my-3">
           Back in 2006, Annette’s uncle had refinanced that house and then died unexpectedly without leaving a will. When the bank eventually learned of this situation in 2014, they attempted to evict the Miller family. However, drawing upon her skills as a community organizer, Annette sought assistance from the Department of Veterans Affairs and ACCE (Alliance of Californians for Community Empowerment), to challenge the foreclosure. Click the play to hear the story of what happened during Annete’s showdown with a massive international financial institution.
-          </p>
+        </p>
       </TourStopContent>
       <TourStopMedia>
         <div></div>

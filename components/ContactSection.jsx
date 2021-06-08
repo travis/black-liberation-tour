@@ -1,4 +1,4 @@
-export default function ContactDonateSection() {
+export default function ContactSection() {
   return (
     <>
       <p className="mb-6 text-xl">
