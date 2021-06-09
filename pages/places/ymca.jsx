@@ -2,20 +2,28 @@ import Image from 'next/image'
 import Link from 'next/link'
 import DirectionsButton from '../../components/DirectionsButton'
 import { tourStop } from '../../lib/data'
+import {
+  TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
+  TourStopMedia, TourAudio, TourStopPhotos
+} from '../../components/tour'
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="p-12">
-        <h1 className="text-4xl text-center p-6">Northwest Branch YMCA</h1>
-        <div className="flex">
-          <h3 className="text-2xl">Corner of Brockhurst and Market</h3>
-          <DirectionsButton from={tourStop['cl-dellums']} to={tourStop['ymca']} />
-        </div>
-
+    <TourStop>
+    <TourStopIntro>
+      <TourStopLogo />
+      <TourStopPhotos>
         <Image className="float-right" src="/places/ymca.jpg" height={241} width={300} />
+      </TourStopPhotos>
+    </TourStopIntro>
+    <TourStopContent>
+      <TourStopHeader
+        name="Northwest Branch YMCA"
+        location="Corner of Brockhurst and Market"
+        from={tourStop['cl-dellums']} to={tourStop['ymca']}
+      />
 
-        <p className="my-3">
+<p className="my-3">
           In the early 1940s, there wasn’t a single Black person on Oakland’s City Council or serving at any level of city government. By 1977, a single generation later, Lionel Wilson was elected as Oakland’s first Black mayor and African Americans were represented on City Council and throughout local politics. This YMCA that you’re standing in front of right now was a major force behind this transformation — and Josh Rose was one of the neighborhood leaders who helped build this institution.
         </p>
         <p className="my-3">
@@ -31,16 +39,19 @@ export default function Home() {
         <p className="my-3">
           Press PLAY below to hear Mary Ellen Butler discuss the history of the Northwest Branch YMCA as an incubator of rising Black leadership.
         </p>
-        <audio controls className="my-12">
-          <source src="/audio/ymca.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <Link href="/places/north-oakland-library">
+    </TourStopContent>
+    <TourStopMedia>
+      <div></div>
+      <TourAudio className="my-12" src="/audio/ymca.mp3" />
+    </TourStopMedia>
+    <TourStopIntro />
+    <TourStopContent className="mt-6 h-24">
+    <Link href="/places/north-oakland-library">
           <a className="btn py-1">Next Stop: North Oakland Branch Library</a>
-        </Link>
-      </main>
-      <footer className="">
-      </footer>
+      </Link>
+    </TourStopContent>
+    <div>
     </div>
+  </TourStop>
   )
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Map from '../components/Map'
+import { TourStopLogo } from '../components/tour'
 
 import { center, tourLocations } from "../lib/data"
 
@@ -10,7 +11,7 @@ export default function Tour() {
     <div className="">
       <main className="flex flex-col lg:flex-row">
         <div className="flex flex-col lg:w-1/3 text-white bg-black">
-          <h1 className="text-4xl text-center p-6">Black Liberation Walking Tour</h1>
+          <TourStopLogo className="mb-0"/>
           <Map className="h-96 flex-grow" zoom={15} center={center} markers={tourLocations} />
         </div>
         <div className="flex flex-col sm:flex-row lg:w-2/3">
@@ -82,7 +83,7 @@ export default function Tour() {
               </a>
             </Link>
           </div>
-          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-yellow-600">
+          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-pink">
             <Link href="/places/north-oakland-library">
               <a className="col-start-1 col-span-5">
                 <Image src="/places/north-oakland-library.jpg" height={222} width={300} />

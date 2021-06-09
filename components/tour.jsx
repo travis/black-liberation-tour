@@ -22,7 +22,7 @@ export function TourStopHeader({ name, location, from, to }) {
 
 export function TourStopFooter({ }) {
   return (
-    <footer className="grid grid-cols-3 bg-red-dark text-pink">
+    <footer className="grid grid-cols-1 lg:grid-cols-3 bg-red-dark text-pink">
       <div className="relative">
         <span className="absolute left-6 bottom-6 uppercase">
           Black Liberation Walking Tour
@@ -40,7 +40,7 @@ export function TourStopFooter({ }) {
 
 export function TourStopLogo({ className, ...props }) {
   return (
-    <div className={`uppercase font-bold bg-red text-center p-12 text-red-light text-xl mb-6 ${className}`} {...props}>
+    <div className={`uppercase font-bold bg-red text-center p-12 text-red-light text-xl ${className}`} {...props}>
       <Link href="/tour">
         <a className="no-underline">
         Black Liberation<br /> Walking Tour
@@ -50,23 +50,23 @@ export function TourStopLogo({ className, ...props }) {
   )
 }
 
-export function TourStop({ children }) {
-  return (
-    <>
-      <main className="grid grid-cols-12">
-        {children}
-      </main>
-      <TourStopFooter />
-    </>
-  )
-}
-
 export function TourAudio({ src, ...props }) {
   return (
     <audio controls {...props}>
       <source src={src} type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
+  )
+}
+
+export function TourStop({ children }) {
+  return (
+    <>
+      <main className="grid grid-cols-1 lg:grid-cols-12">
+        {children}
+      </main>
+      <TourStopFooter />
+    </>
   )
 }
 
@@ -84,6 +84,14 @@ export function TourStopContent({ className, ...props }) {
 
 export function TourStopMedia({ className, ...props }) {
   return (
-    <section className={`flex flex-col justify-between col-span-3 ${className}`} {...props} />
+    <section className={`flex flex-col justify-between col-span-3 ml-12 lg:ml-0 ${className}`} {...props} />
+  )
+}
+
+export function TourStopPhotos({children, className, ...props}){
+  return (
+    <section className={`${className} mt-6`} {...props}>
+      {children}
+    </section>
   )
 }

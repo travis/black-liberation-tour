@@ -4,7 +4,7 @@ import { tourStop } from '../../lib/data'
 
 import {
    TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
-   TourStopMedia, TourAudio
+   TourStopMedia, TourAudio, TourStopPhotos
  } from '../../components/tour'
 
 
@@ -13,7 +13,9 @@ export default function AnnetteMiller() {
     <TourStop>
       <TourStopIntro>
         <TourStopLogo />
-        <Image src="/places/annette-miller.jpg" height={200} width={300} />
+        <TourStopPhotos>
+          <Image src="/places/annette-miller.jpg" height={200} width={300} />
+        </TourStopPhotos>
       </TourStopIntro>
       <TourStopContent>
         <TourStopHeader

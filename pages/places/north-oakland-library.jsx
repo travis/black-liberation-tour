@@ -3,18 +3,26 @@ import Link from 'next/link'
 import DirectionsButton from '../../components/DirectionsButton'
 import { tourStop } from '../../lib/data'
 
-export default function Home() {
+import {
+  TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
+  TourStopMedia, TourAudio, TourStopPhotos
+} from '../../components/tour'
+
+export default function NorthOaklandLibrary() {
   return (
-    <div className="">
-      <main className="p-12">
-        <h1 className="text-4xl text-center p-6">North Oakland Branch Library</h1>
-        <div className="flex">
-          <h3 className="text-2xl">30th and San Pablo</h3>
-          <DirectionsButton from={tourStop['ymca']} to={tourStop['north-oakland-library']} />
-        </div>
-
+    <TourStop>
+    <TourStopIntro>
+      <TourStopLogo />
+      <TourStopPhotos>
         <Image className="float-right" src="/places/north-oakland-library.jpg" height={243} width={300} />
-
+      </TourStopPhotos>
+    </TourStopIntro>
+    <TourStopContent>
+      <TourStopHeader
+        name="North Oakland Branch Library"
+        location="30th and San Pablo"
+        from={tourStop['ymca']} to={tourStop['north-oakland-library']}
+      />
         <p className="my-3">
           As a young girl growing up in this neighborhood, Alternier Cook has fond memories of spending time at the local library, which she could easily walk to after school. Back then, residents could choose between the North Oakland Branch Library, near the California Hotel, or the smaller Telegrove Branch Library. Unfortunately, the Telegrove Branch closed down and then the North Oakland Branch finally shut its doors permanently in 1981, after changing locations several times. Its final location was 3134 San Pablo Avenue, just up the block from where you’re standing right now.
         </p>
@@ -30,16 +38,19 @@ export default function Home() {
         <p className="my-3">
           Click the play button below to hear Alternier Cook discuss the origins of Friends of Hoover-Durant Public Library.
         </p>
-        <audio controls className="my-12">
-          <source src="/audio/north-oakland-library.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <Link href="/places/flints">
+    </TourStopContent>
+    <TourStopMedia>
+      <div></div>
+      <TourAudio className="my-12" src="/audio/north-oakland-library.mp3" />
+    </TourStopMedia>
+    <TourStopIntro />
+    <TourStopContent className="mt-6 h-24">
+    <Link href="/places/flints">
           <a className="btn py-1">Next Stop: Flint's BBQ</a>
         </Link>
-      </main>
-      <footer className="">
-      </footer>
+    </TourStopContent>
+    <div>
     </div>
+  </TourStop>
   )
 }
