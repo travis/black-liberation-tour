@@ -1,21 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
+
 import { tourStop } from '../../lib/data'
+import {
+  TourStop, TourStopIntro, TourStopLogo, TourStopContent, TourStopHeader,
+  TourStopMedia, TourAudio, TourStopPhotos
+} from '../../components/tour'
 
-export default function Home() {
+export default function Freeways() {
   return (
-    <div className="">
-      <main className="p-12">
-        <h1 className="text-4xl text-center p-6">Surrounded By Freeways</h1>
-        <div className="flex">
-          <h3 className="text-2xl">34th and Martin Luther King, Jr. Way</h3>
-          <DirectionsButton from={tourStop['annette-miller']} to={tourStop['freeways']} />
-        </div>
-
-        <Image className="float-right" src="/places/freeways.jpg" height={150} width={300} />
-
-        <p className="my-3">
+    <TourStop>
+      <TourStopIntro>
+        <TourStopLogo />
+        <TourStopPhotos>
+          <Image src="/places/freeways.jpg" height={150} width={300} />
+        </TourStopPhotos>
+      </TourStopIntro>
+      <TourStopContent>
+        <TourStopHeader
+          name="Surrounded By Freeways"
+          location="34th and Martin Luther King, Jr. Way"
+          from={tourStop['annette-miller']} to={tourStop['freeways']}
+        />
+                <p className="my-3">
           If you look at a map of West Oakland, you’ll see that the entire area is boxed in by freeways. Where you are standing right now is a perfect example of why these structures have been so harmful to the people who live here.
         </p>
 
@@ -35,16 +42,19 @@ export default function Home() {
           Regardless of what might happen in the future, multiple generations of Hoover-Foster residents have already suffered by living in the shadow of these towering thoroughfares. Click the play button  below to hear longtime resident Alternier Cook describe what this neighborhood was like before the freeways appeared and how their construction immediately impacted her health.
         </p>
 
-        <audio controls className="my-12">
-          <source src="/audio/freeways.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <Link href="/places/delilah-beasley-house">
+      </TourStopContent>
+      <TourStopMedia>
+        <div></div>
+        <TourAudio className="my-12" src="/audio/freeways.mp3" />
+      </TourStopMedia>
+      <TourStopIntro />
+      <TourStopContent className="mt-6 h-24">
+      <Link href="/places/delilah-beasley-house">
           <a className="btn py-1">Next Stop: Delilah Beasley House</a>
         </Link>
-      </main>
-      <footer className="">
-      </footer>
-    </div>
+      </TourStopContent>
+      <div>
+      </div>
+    </TourStop>
   )
 }

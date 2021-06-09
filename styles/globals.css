@@ -1,13 +1,13 @@
 @tailwind base;
 
 a {
-    @apply text-yellow-500 underline;
+    @apply underline;
 }
 
 @tailwind components;
 
 .btn {
-    @apply bg-yellow-500 text-gray-100 no-underline text-xl rounded-lg px-3 font-bold border-2 border-gray-100;
+    @apply bg-red-dark text-white underline uppercase px-3 py-2 font-bold border-2 ;
 
 }
 
@@ -20,3 +20,9 @@ a {
 }
 
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Formata';
+    font-weight: 400;
+    src: url('./fonts/formata/formata-regular.ttf');
+  }
