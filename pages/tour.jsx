@@ -15,7 +15,7 @@ export default function Tour() {
           <Map className="h-96 flex-grow" zoom={15} center={center} markers={tourLocations} />
         </div>
         <div className="flex flex-col sm:flex-row lg:w-2/3">
-          <div className="flex flex-col sm:w-1/2 text-left px-6 pt-24 bg-yellow-600">
+          <div className="flex flex-col sm:w-1/2 text-left px-6 pt-24 bg-yellow-600 overflow-y-scroll">
             <h3 className="font-serif text-3xl pl-3 mb-6">Stations:</h3>
             <Link href="/places/st-augustines">
               <a className="station-name">
@@ -83,7 +83,7 @@ export default function Tour() {
               </a>
             </Link>
           </div>
-          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-pink">
+          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-pink overflow-hidden">
             <Link href="/places/north-oakland-library">
               <a className="col-start-1 col-span-5">
                 <Image src="/places/north-oakland-library.jpg" height={222} width={300} />
