@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="">
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-black text-white min-h-screen">
-        <div className="py-12 px-20 h-96">
+        <div className="py-12 px-20 min-h-96">
           <h1 className="text-5xl text-center font-display uppercase py-6 border-t-4 border-b-4">
             Black Liberation Walking Tour
           </h1>
@@ -19,8 +19,8 @@ export default function Home() {
             Hoover-Durant Public Library
           </h5>
         </div>
-        <div className={`relative h-96`}>
-          <Image src="/places/flints.jpg" layout="fill"></Image>
+        <div className={`relative min-h-96`}>
+          <Image src="/places/flints.jpg" layout="fill" className="object-cover"></Image>
         </div>
         <div className={`py-12 px-6 min-h-96 ${!moreHidden && 'row-span-2'}`}>
           <h4 className="uppercase text-xl font-bold">Black Spaces Matter.</h4>
@@ -47,7 +47,7 @@ export default function Home() {
             </button>
           )}
         </div>
-        <div className={`py-12 px-12 bg-red-dark`}>
+        <div className={`py-12 px-12 bg-red-dark min-h-96`}>
           <h3 className="text-xl uppercase font-bold">Black Liberation Walking<br /> Tour Launch Party</h3>
           <p className="my-12">
             Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
@@ -57,10 +57,10 @@ export default function Home() {
             RSVP on the Event Page
            </a>
         </div>
-        <div className={`h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:flex'}`}>
+        <div className={`min-h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:flex'}`}>
           <h3 className="text-3xl m-auto font-display underline border-white border-2 px-6 py-3">Tour Coming Soon</h3>
         </div>
-        <div className={`p-6 h-96 bg-red-dark ${!moreHidden && 'xl:hidden'}`}>
+        <div className={`p-6 min-h-96 bg-red-dark ${!moreHidden && 'xl:hidden'}`}>
           <ContactSection />
           <SubscribeFollowSection />
         </div>

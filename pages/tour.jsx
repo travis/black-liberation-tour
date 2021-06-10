@@ -8,8 +8,8 @@ import { center, tourLocations } from "../lib/data"
 
 export default function Tour() {
   return (
-    <div className="">
-      <main className="flex flex-col lg:flex-row">
+    <div className="w-full h-full">
+      <main className="flex flex-col lg:flex-row w-full h-full">
         <div className="flex flex-col lg:w-1/3 text-white bg-black">
           <TourStopLogo className="mb-0"/>
           <Map className="h-96 flex-grow" zoom={15} center={center} markers={tourLocations} />

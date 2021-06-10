@@ -1,28 +1,34 @@
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
 @tailwind base;
 
 a {
-    @apply underline;
+  @apply underline;
 }
 
 @tailwind components;
 
 .btn {
-    @apply bg-red-dark text-white underline uppercase px-3 py-2 font-bold border-2 ;
-
+  @apply bg-red-dark text-white underline uppercase px-3 py-2 font-bold border-2;
 }
 
 .station-name {
-    @apply text-lg p-3 text-black no-underline border-b-2 border-black uppercase;
+  @apply text-lg p-3 text-black no-underline border-b-2 border-black uppercase;
 }
 
 .station-name:hover {
-    @apply font-bold;
+  @apply font-bold;
 }
 
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Formata';
-    font-weight: 400;
-    src: url('./fonts/formata/formata-regular.ttf');
-  }
+  font-family: "Formata";
+  font-weight: 400;
+  src: url("./fonts/formata/formata-regular.ttf");
+}
