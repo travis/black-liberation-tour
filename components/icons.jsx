@@ -43,3 +43,11 @@ export function Instagram({ className }) {
   );
 }
 
+export function Arrow({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" className={`${className}`}>
+      <line x1="0" y1="50" x2="350" y2="50" stroke="#000" stroke-width="8" />
+      <polyline points="250 0, 350 50, 250 100" fill="none" stroke="#000" stroke-width="8" stroke="black" />
+    </svg>
+  );
+}

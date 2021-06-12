@@ -32,3 +32,10 @@ a {
   font-weight: 400;
   src: url("./fonts/formata/formata-regular.ttf");
 }
+
+.arrow {
+  visibility: hidden;
+}
+.station-name:hover .arrow {
+  visibility: visible;
+}

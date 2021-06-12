@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import { Arrow } from "../components/icons";
 import Map from "../components/Map";
 import { TourStopLogo } from "../components/tour";
 
@@ -22,33 +23,33 @@ export default function Tour() {
                 <h2 className="">
                   St. Augustine's
                   <br />
-                  Episcopal Church
+                  Episcopal Church <Arrow className="arrow w-20 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/annette-miller">
               <a className="station-name">
-                <h2 className="">Annette Miller</h2>
+                <h2 className="">Annette Miller <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/freeways">
               <a className="station-name">
-                <h2 className="">Surrounded By Freeways</h2>
+                <h2 className="">Surrounded By Freeways <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/delilah-beasley-house">
               <a className="station-name">
-                <h2 className="">Delilah Beasley House</h2>
+                <h2 className="">Delilah Beasley House <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/cl-dellums">
               <a className="station-name">
-                <h2 className="">C.L. Dellums</h2>
+                <h2 className="">C.L. Dellums <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/ymca">
               <a className="station-name">
-                <h2 className="">Northwest Branch YMCA</h2>
+                <h2 className="">Northwest Branch YMCA <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/north-oakland-library">
@@ -56,18 +57,18 @@ export default function Tour() {
                 <h2 className="">
                   North Oakland
                   <br />
-                  Branch Library
+                  Branch Library <Arrow className="arrow w-20 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/flints">
               <a className="station-name">
-                <h2 className="">Flint’s BBQ</h2>
+                <h2 className="">Flint’s BBQ <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
             <Link href="/places/california-hotel">
               <a className="station-name">
-                <h2 className="">California Hotel</h2>
+                <h2 className="">California Hotel <Arrow className="arrow w-20 inline" /></h2>
               </a>
             </Link>
           </div>
