@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import Map from '../components/Map'
-import { TourStopLogo } from '../components/tour'
+import Image from "next/image";
+import Link from "next/link";
+import Footer from "../components/Footer";
+import Map from "../components/Map";
+import { TourStopLogo } from "../components/tour";
 
-import { center, tourLocations } from "../lib/data"
-
+import { center, tourLocations } from "../lib/data";
 
 export default function Tour() {
   return (
     <div className="w-full h-full">
       <main className="flex flex-col lg:flex-row w-full h-full">
         <div className="flex flex-col lg:w-1/3 text-white bg-black">
-          <TourStopLogo className="mb-0"/>
+          <TourStopLogo className="mb-0" />
           <Map className="h-96 flex-grow" zoom={15} center={center} markers={tourLocations} />
         </div>
         <div className="flex flex-col sm:flex-row lg:w-2/3">
@@ -20,66 +20,54 @@ export default function Tour() {
             <Link href="/places/st-augustines">
               <a className="station-name">
                 <h2 className="">
-                  St. Augustine's<br />
-                 Episcopal Church
+                  St. Augustine's
+                  <br />
+                  Episcopal Church
                 </h2>
               </a>
             </Link>
             <Link href="/places/annette-miller">
               <a className="station-name">
-                <h2 className="">
-                  Annette Miller
-                </h2>
+                <h2 className="">Annette Miller</h2>
               </a>
             </Link>
             <Link href="/places/freeways">
               <a className="station-name">
-                <h2 className="">
-                  Surrounded By Freeways
-              </h2>
+                <h2 className="">Surrounded By Freeways</h2>
               </a>
             </Link>
             <Link href="/places/delilah-beasley-house">
               <a className="station-name">
-                <h2 className="">
-                  Delilah Beasley House
-              </h2>
+                <h2 className="">Delilah Beasley House</h2>
               </a>
             </Link>
             <Link href="/places/cl-dellums">
               <a className="station-name">
-                <h2 className="">
-                  C.L. Dellums
-                </h2>
+                <h2 className="">C.L. Dellums</h2>
               </a>
             </Link>
             <Link href="/places/ymca">
               <a className="station-name">
-                <h2 className="">
-                  Northwest Branch YMCA
-                </h2>
+                <h2 className="">Northwest Branch YMCA</h2>
               </a>
             </Link>
             <Link href="/places/north-oakland-library">
               <a className="station-name">
                 <h2 className="">
-                  North Oakland<br />
-                Branch Library
+                  North Oakland
+                  <br />
+                  Branch Library
                 </h2>
               </a>
             </Link>
             <Link href="/places/flints">
               <a className="station-name">
-                <h2 className="">
-                  Flint’s BBQ
-                </h2>
+                <h2 className="">Flint’s BBQ</h2>
               </a>
             </Link>
             <Link href="/places/california-hotel">
               <a className="station-name">
-                <h2 className="">
-                  California Hotel
-                </h2>
+                <h2 className="">California Hotel</h2>
               </a>
             </Link>
           </div>
@@ -131,12 +119,10 @@ export default function Tour() {
               </a>
             </Link>
           </div>
-
         </div>
       </main>
 
-      <footer className="">
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }

@@ -1,8 +1,6 @@
-import DirectionsButton from './DirectionsButton'
-import ContactDonateSection from './ContactSection'
-import SubscribeFollowSection from './SubscribeFollowSection'
-
 import Link from 'next/link'
+import DirectionsButton from './DirectionsButton'
+import Footer from './Footer'
 
 export function TourStopHeader({ name, location, from, to }) {
   return (
@@ -17,24 +15,6 @@ export function TourStopHeader({ name, location, from, to }) {
       <h3 className="text-lg mb-4 italic">{location}</h3>
       <DirectionsButton from={from} to={to} />
     </>
-  )
-}
-
-export function TourStopFooter({ }) {
-  return (
-    <footer className="grid grid-cols-1 lg:grid-cols-3 bg-red-dark text-pink">
-      <div className="relative">
-        <span className="absolute left-6 bottom-6 uppercase">
-          Black Liberation Walking Tour
-        </span>
-      </div>
-      <div className="py-12 px-6">
-        <ContactDonateSection />
-      </div>
-      <div className="py-12 px-6">
-        <SubscribeFollowSection />
-      </div>
-    </footer>
   )
 }
 
@@ -65,7 +45,7 @@ export function TourStop({ children }) {
       <main className="grid grid-cols-1 lg:grid-cols-12">
         {children}
       </main>
-      <TourStopFooter />
+      <Footer />
     </>
   )
 }

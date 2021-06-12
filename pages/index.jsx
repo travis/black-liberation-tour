@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { DownChevron, Close, Facebook, Instagram } from '../components/icons'
 import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
+import PinkButton from '../components/PinkButton'
+import DonateButton from '../components/DonateButton'
 
 export default function Home() {
   const [moreHidden, setMoreHidden] = useState(true)
@@ -52,10 +54,10 @@ export default function Home() {
           <p className="my-12">
             Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
           </p>
-          <a className="btn bg-pink-dark text-black font-display"
-             href="https://www.facebook.com/events/572413663743456">
-            RSVP on the Event Page
-           </a>
+          <PinkButton href="https://www.facebook.com/events/572413663743456">RSVP on the Event Page</PinkButton>
+          <br />
+          <br />
+          <DonateButton />
         </div>
         <div className={`min-h-96 bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:flex'}`}>
           <h3 className="text-3xl m-auto font-display underline border-white border-2 px-6 py-3">Tour Coming Soon</h3>
