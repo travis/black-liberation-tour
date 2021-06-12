@@ -18,7 +18,7 @@ a {
 }
 
 .station-name {
-  @apply text-lg p-3 text-black no-underline border-b-2 border-black uppercase;
+  @apply text-lg p-3 text-black no-underline border-b border-black uppercase;
 }
 
 .station-name:hover {
