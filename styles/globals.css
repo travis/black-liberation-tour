@@ -35,9 +35,9 @@ a {
 @tailwind utilities;
 
 @font-face {
-  font-family: "Formata";
+  font-family: 'Formata';
   font-weight: 400;
-  src: url("./fonts/formata/formata-regular.ttf");
+  src: url('./fonts/formata/formata-regular.ttf');
 }
 
 .arrow {

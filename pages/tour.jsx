@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import Footer from "../components/Footer";
-import { Arrow } from "../components/icons";
-import Map from "../components/Map";
-import { TourStopLogo } from "../components/tour";
+import Image from 'next/image'
+import Link from 'next/link'
+import Footer from '../components/Footer'
+import { Arrow } from '../components/icons'
+import Map from '../components/Map'
+import { TourStopLogo } from '../components/tour'
 
-import { center, tourLocations } from "../lib/data";
+import { center, tourLocations } from '../lib/data'
 
 export default function Tour() {
   return (
@@ -29,27 +29,37 @@ export default function Tour() {
             </Link>
             <Link href="/places/annette-miller">
               <a className="station-name">
-                <h2 className="">Annette Miller <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  Annette Miller <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/freeways">
               <a className="station-name">
-                <h2 className="">Surrounded By Freeways <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  Surrounded By Freeways <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/delilah-beasley-house">
               <a className="station-name">
-                <h2 className="">Delilah Beasley House <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  Delilah Beasley House <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/cl-dellums">
               <a className="station-name">
-                <h2 className="">C.L. Dellums <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  C.L. Dellums <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/ymca">
               <a className="station-name">
-                <h2 className="">Northwest Branch YMCA <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  Northwest Branch YMCA <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/north-oakland-library">
@@ -63,12 +73,16 @@ export default function Tour() {
             </Link>
             <Link href="/places/flints">
               <a className="station-name">
-                <h2 className="">Flint’s BBQ <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  Flint’s BBQ <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
             <Link href="/places/california-hotel">
               <a className="station-name">
-                <h2 className="">California Hotel <Arrow className="arrow w-20 inline" /></h2>
+                <h2 className="">
+                  California Hotel <Arrow className="arrow w-20 inline" />
+                </h2>
               </a>
             </Link>
           </div>
@@ -125,5 +139,5 @@ export default function Tour() {
 
       <Footer />
     </div>
-  );
+  )
 }

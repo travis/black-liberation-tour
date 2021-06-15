@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "./icons";
+import { Facebook, Instagram } from './icons'
 
 export default function SocialIcons() {
   return (
@@ -10,5 +10,5 @@ export default function SocialIcons() {
         <Facebook className="w-12 h-12" />
       </a>
     </div>
-  );
+  )
 }

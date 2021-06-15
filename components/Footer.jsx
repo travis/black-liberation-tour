@@ -1,12 +1,12 @@
-import ContactSection from "../components/ContactSection";
-import DonateButton from "../components/DonateButton";
-import SubscribeFollowSection from "../components/SubscribeFollowSection";
+import ContactSection from '../components/ContactSection'
+import DonateButton from '../components/DonateButton'
+import SubscribeFollowSection from '../components/SubscribeFollowSection'
 
 export default function Footer() {
   return (
     <footer className="flex flex-col lg:flex-row w-full bg-red-dark text-white">
       <div className="flex flex-col lg:w-1/3 align-bottom relative">
-        <span className="absolute left-5 bottom-5 uppercase text-xl font-bold" style={{ color: "var(--pink)" }}>
+        <span className="absolute left-5 bottom-5 uppercase text-xl font-bold" style={{ color: 'var(--pink)' }}>
           Black Liberation Walking Tour
         </span>
       </div>
@@ -20,5 +20,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
