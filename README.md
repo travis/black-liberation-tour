@@ -27,6 +27,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
 
+## Code formatting
+
+Run `npm run format` to format all files. If you have a Prettier plugin for
+your editor, it can run automatically on each file save.
+
 ## Code Organization
 
 Pages can be found in the `pages` directory.
