@@ -1,3 +1,6 @@
+/* Replicate Tailwind's sm: breakpoint. */
+@custom-media --sm (min-width: 640px);
+
 html,
 body,
 #__next {
@@ -9,7 +12,13 @@ body,
   font-size: 1.05vw;
 
   --pink: rgb(216, 177, 166);
-  --borderWidth: 0.15rem;
+  --borderWidth: 0.3rem;
+}
+
+@media (--sm) {
+  :root {
+    --borderWidth: 0.15rem;
+  }
 }
 
 @tailwind base;
@@ -21,16 +30,7 @@ a {
 @tailwind components;
 
 .btn {
-  @apply bg-red-dark text-white underline uppercase px-3 py-2 font-bold border-2;
-}
-
-.station-name {
-  @apply text-lg p-3 text-black no-underline border-red-dark uppercase;
-  border-bottom-width: var(--borderWidth);
-}
-
-.station-name:hover {
-  @apply font-bold;
+  @apply bg-red-dark text-white underline uppercase sm:px-3 sm:py-2 font-bold;
 }
 
 @tailwind utilities;
@@ -41,11 +41,50 @@ a {
   src: url('./fonts/formata/formata-regular.ttf');
 }
 
-.arrow {
-  opacity: 0;
-  transition: all 100ms;
+.station-name {
+  @apply p-3 text-black no-underline border-red-dark uppercase;
+  border-bottom-width: calc(var(--borderWidth) / 2);
+}
+.station-name:hover {
+  @apply font-bold;
 }
 .station-name:hover .arrow {
   opacity: 1;
   transform: translate3d(5px, 0, 0);
+}
+.arrow {
+  opacity: 0;
+  transition: all 100ms;
+}
+
+.tour-images img {
+  max-width: unset;
+}
+
+.mosaicflow__column {
+  float: left;
+}
+.mosaicflow__column:not(:last-child) .mosaicflow__item {
+  @apply pr-6 sm:pr-3;
+}
+.mosaicflow__item {
+  @apply pb-6 sm:pb-3;
+}
+.mosaicflow__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mosaicflow__item > * {
+  display: block !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  zoom: 1;
 }

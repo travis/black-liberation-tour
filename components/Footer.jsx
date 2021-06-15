@@ -10,7 +10,7 @@ export default function Footer() {
           Black Liberation Walking Tour
         </span>
       </div>
-      <div className="flex flex-col sm:flex-row lg:w-2/3">
+      <div className="flex flex-col sm:flex-row lg:w-2/3 p-10 sm:p-0">
         <div className="flex flex-col sm:w-1/2 text-left p-10">
           <ContactSection />
           <DonateButton />

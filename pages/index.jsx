@@ -87,8 +87,6 @@ export default function Home() {
           <SubscribeFollowSection />
         </div>
       </main>
-
-      <footer className=""></footer>
     </div>
   )
 }

@@ -18,6 +18,11 @@ function MyApp({ Component, pageProps }) {
           integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
           crossOrigin=""
         ></script>
+
+        {/* TODO we can create masonry layouts with CSS nowadays, but this easier to stick into the app. Replace this with pure-CSS version... */}
+        <script src="/lib/jquery-2.2.4.min.js"></script>
+        <script src="/lib/jquery.mosaicflow.min.js"></script>
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVMS731GQN" />
         <script
           dangerouslySetInnerHTML={{
@@ -31,7 +36,9 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
-      <Component {...pageProps} />
+      <body className="text-5xl md:text-3xl lg:text-xl">
+        <Component {...pageProps} />
+      </body>
     </>
   )
 }

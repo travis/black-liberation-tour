@@ -13,7 +13,7 @@ export default function SubscribeFollowSection() {
           target="_blank"
           noValidate
         >
-          <label htmlFor="mce-EMAIL" className="text-xl block">
+          <label htmlFor="mce-EMAIL" className="block">
             Subscribe to our newsletter:
           </label>
           <div className="flex flex-row my-2">

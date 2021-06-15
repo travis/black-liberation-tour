@@ -20,7 +20,11 @@ module.exports = {
         dark: '#D8B1A6',
       },
     },
-    extend: {},
+    extend: {
+      spacing: {
+        192: '48rem',
+      },
+    },
   },
   variants: {
     extend: {},
