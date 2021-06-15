@@ -18,7 +18,7 @@ export function TourStopHeader({ name, location, from, to }) {
 
 export function TourStopLogo({ className, ...props }) {
   return (
-    <div className={`uppercase font-bold bg-red text-center p-12 text-red-light text-xl ${className}`} {...props}>
+    <div className={`uppercase font-bold bg-red text-center p-12 text-red-light text-3xl ${className}`} {...props}>
       <Link href="/tour">
         <a className="no-underline">
           Black Liberation

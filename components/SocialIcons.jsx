@@ -6,7 +6,7 @@ export default function SocialIcons() {
       <a href="https://www.instagram.com/oakblwt/" aria-label="BLWT Instagram">
         <Instagram className="w-12 h-12" />
       </a>
-      <a href="https://www.facebook.com/OakBLWT/" aria-label="BLWT Facebook Page">
+      <a href="https://www.facebook.com/OakBLWT/" aria-label="BLWT Facebook Page" className="transform scale-95">
         <Facebook className="w-12 h-12" />
       </a>
     </div>

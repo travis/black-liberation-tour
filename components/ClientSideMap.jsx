@@ -12,7 +12,7 @@ export default function Map({ markers, ...props }) {
       />
       {markers &&
         markers.map(([lat, long, title, addressTitle, slug]) => (
-          <Marker position={[lat, long]}>
+          <Marker position={[lat, long]} key={slug}>
             <Popup>
               <Link href={`/places/${slug}`}>
                 <a>

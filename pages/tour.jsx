@@ -16,77 +16,77 @@ export default function Tour() {
           <Map className="h-96 flex-grow" zoom={15} center={center} markers={tourLocations} />
         </div>
         <div className="flex flex-col sm:flex-row lg:w-2/3">
-          <div className="flex flex-col sm:w-1/2 text-left px-6 pt-24 bg-yellow-600 overflow-y-auto">
-            <h3 className="font-serif text-3xl pl-3 mb-6 uppercase">Stations:</h3>
+          <div className="flex flex-col sm:w-2/5 text-left px-6 pt-24 bg-yellow-600 overflow-y-auto">
+            <h3 className="font-serif text-4xl pl-3 mb-6 uppercase text-red">Stations:</h3>
             <Link href="/places/st-augustines">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
                   St. Augustine's
                   <br />
-                  Episcopal Church <Arrow className="arrow w-20 inline" />
+                  Episcopal Church <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/annette-miller">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  Annette Miller <Arrow className="arrow w-20 inline" />
+                  Annette Miller <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/freeways">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  Surrounded By Freeways <Arrow className="arrow w-20 inline" />
+                  Surrounded By Freeways <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/delilah-beasley-house">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  Delilah Beasley House <Arrow className="arrow w-20 inline" />
+                  Delilah Beasley House <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/cl-dellums">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  C.L. Dellums <Arrow className="arrow w-20 inline" />
+                  C.L. Dellums <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/ymca">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  Northwest Branch YMCA <Arrow className="arrow w-20 inline" />
+                  Northwest Branch YMCA <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
-            <Link href="/places/north-oakland-library">
+            <Link href="/places/north-oakland-library text-red-dark">
               <a className="station-name">
                 <h2 className="">
                   North Oakland
                   <br />
-                  Branch Library <Arrow className="arrow w-20 inline" />
+                  Branch Library <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/flints">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  Flint’s BBQ <Arrow className="arrow w-20 inline" />
+                  Flint’s BBQ <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
             <Link href="/places/california-hotel">
-              <a className="station-name">
+              <a className="station-name text-red-dark">
                 <h2 className="">
-                  California Hotel <Arrow className="arrow w-20 inline" />
+                  California Hotel <Arrow className="arrow w-16 inline" />
                 </h2>
               </a>
             </Link>
           </div>
-          <div className="p-6 sm:w-1/2 grid grid-rows-5 grid-cols-12 gap-2 bg-pink overflow-hidden">
+          <div className="p-6 sm:w-3/5 grid grid-rows-5 grid-cols-12 gap-2 bg-pink overflow-hidden">
             <Link href="/places/north-oakland-library">
               <a className="col-start-1 col-span-5">
                 <Image src="/places/north-oakland-library.jpg" height={222} width={300} />
