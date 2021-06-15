@@ -17,7 +17,7 @@ export default function Tour() {
         </div>
         <div className="flex flex-col sm:flex-row lg:w-2/3">
           <div className="flex flex-col sm:w-1/2 text-left px-6 pt-24 bg-yellow-600 overflow-y-auto">
-            <h3 className="font-serif text-3xl pl-3 mb-6">Stations:</h3>
+            <h3 className="font-serif text-3xl pl-3 mb-6 uppercase">Stations:</h3>
             <Link href="/places/st-augustines">
               <a className="station-name">
                 <h2 className="">
