@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Image from 'next/image'
 import { DownChevron, Close } from '../components/icons'
 import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
@@ -14,10 +13,10 @@ export default function Home() {
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr bg-black text-white min-h-screen">
         <div className="py-24 px-24 md:py-12 md:px-12 bg-pink-dark relative sm:h-auto">
           {/* This next/image position:relative  ^ requirement is just weird. */}
-          <Image src="/home-logo.png" layout="fill" className="object-contain w-full h-full"></Image>
+          <img src="/home-logo.png" className="object-contain w-full h-full absolute inset-0" />
         </div>
         <div className={`relative`}>
-          <Image src="/places/CA-hotel.jpg" layout="fill" className="object-cover"></Image>
+          <img src="/places/CA-hotel.jpg" className="object-cover w-full h-full absolute inset-0" />
         </div>
         <div
           className={`py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start ${
@@ -74,7 +73,7 @@ export default function Home() {
         </div>
         <div className={`bg-red flex flex-col justify-center items-start ${showMore && 'md:hidden xl:flex'}`}>
           <div
-            className="text-9xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
+            className="text-8xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
             style={{ borderWidth: 'var(--borderWidth)' }}
           >
             <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
