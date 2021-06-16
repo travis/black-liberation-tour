@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import { DownChevron, Close, Facebook, Instagram } from '../components/icons'
+import { DownChevron, Close } from '../components/icons'
 import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
 import PinkButton from '../components/PinkButton'

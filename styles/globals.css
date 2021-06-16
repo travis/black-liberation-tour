@@ -12,12 +12,14 @@ body,
   --borderWidth: 0.6rem;
 }
 
-@media (min-width: 640px) {
+/* md */
+@media (min-width: 768px) {
   :root {
     --borderWidth: 0.25rem;
   }
 }
 
+/* xl */
 @media (min-width: 1280px) {
   :root {
     font-size: 0.85vw;
