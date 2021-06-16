@@ -12,17 +12,14 @@ export default class Tour extends Component {
   mosaic = createRef()
 
   componentDidMount() {
-    console.log('MOUNT', this.mosaic.current)
-    setTimeout(() => {
-      $(this.mosaic.current).mosaicflow()
+    $(this.mosaic.current).mosaicflow({
+      itemHeightCalculation: 'attribute',
+      minItemWidth: 10000000,
     })
   }
 
   componentWillUnmount() {
-    console.log('UNMOUNT')
-    setTimeout(() => {
-      $(this.mosaic.current).mosaicflow('empty')
-    })
+    $(this.mosaic.current).mosaicflow('empty')
   }
 
   render() {
@@ -114,48 +111,47 @@ export default class Tour extends Component {
             <div className="p-10 sm:p-6 sm:w-3/5 bg-pink overflow-y-scroll">
               <div ref={this.mosaic} className="clearfix tour-images w-full h-auto">
                 <Link href="/places/north-oakland-library">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="222">
                     <Image src="/places/north-oakland-library.jpg" height={222} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/st-augustines">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="342">
                     <Image src="/places/st-augustines.jpg" height={342} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/annette-miller">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="200">
                     <Image src="/places/annette-miller.jpg" height={200} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/flints">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="222">
                     <Image src="/places/flints.jpg" height={222} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/freeways">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="150">
                     <Image src="/places/freeways.jpg" height={150} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/cl-dellums">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="220">
                     <Image src="/places/cl-dellums.jpg" height={220} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/delilah-beasley-house">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="380">
                     <Image src="/places/delilah-beasley-house.jpg" height={380} width={300} />
                   </a>
                 </Link>
-
                 <Link href="/places/ymca">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="241">
                     <Image src="/places/ymca.jpg" height={241} width={300} />
                   </a>
                 </Link>
                 <Link href="/places/california-hotel">
-                  <a className="mosaicflow__item block w-full m-0">
+                  <a className="mosaicflow__item block w-full m-0" height="222">
                     <Image src="/places/california-hotel.png" height={222} width={300} />
                   </a>
                 </Link>
