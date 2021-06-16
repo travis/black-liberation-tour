@@ -13,12 +13,16 @@ export default class Tour extends Component {
 
   componentDidMount() {
     console.log('MOUNT', this.mosaic.current)
-    $(this.mosaic.current).mosaicflow({})
+    setTimeout(() => {
+      $(this.mosaic.current).mosaicflow()
+    })
   }
 
   componentWillUnmount() {
     console.log('UNMOUNT')
-    $(this.mosaic.current).mosaicflow('empty')
+    setTimeout(() => {
+      $(this.mosaic.current).mosaicflow('empty')
+    })
   }
 
   render() {
@@ -79,8 +83,8 @@ export default class Tour extends Component {
                   </span>
                 </a>
               </Link>
-              <Link href="/places/north-oakland-library text-red-dark">
-                <a className="station-name">
+              <Link href="/places/north-oakland-library">
+                <a className="station-name text-red-dark">
                   <span className="">
                     North Oakland
                     <br />
