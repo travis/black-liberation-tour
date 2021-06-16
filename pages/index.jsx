@@ -25,14 +25,14 @@ export default function Home() {
           }`}
         >
           <h4 className="uppercase text-8xl md:text-xl font-bold mb-24 md:mb-6">Black Spaces Matter.</h4>
-          <p className="mb-24 m:mb-6">
+          <p className="mb-24 md:mb-6">
             The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
             multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and
             historical importance of our neighborhood. We celebrate belonging through the 100 year narrative ribbon that
             leads from the early West Coast civil rights movement through the second wave of the Great Migration to the
             Black Liberation actions of the present day.
           </p>
-          <p className={`mb-24 m:mb-6 ${!showMore && 'hidden'}`}>
+          <p className={`mb-24 md:mb-6 ${!showMore && 'hidden'}`}>
             A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour
             captures oral histories to document the lives and culture of long-time residents, historical figures, and
             rapidly disappearing former Black spaces. We are creating this archive to mitigate cultural erasure and
@@ -67,8 +67,8 @@ export default function Home() {
           </PinkButton>
           <br />
           <DonateButton className="w-5/6 md:w-3/4" />
-          <div className="md:flex-grow mb-24 md:mb-6" />
-          <p className="">
+          <div className="hidden md:flex-grow mb-24 md:mb-6" />
+          <p className="hidden">
             <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
             className="text-9xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
             style={{ borderWidth: 'var(--borderWidth)' }}
           >
-            <h3 className="border-white pb-3" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
+            <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
               Tour Coming Soon
             </h3>
           </div>
