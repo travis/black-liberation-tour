@@ -7,27 +7,32 @@ import PinkButton from '../components/PinkButton'
 import DonateButton from '../components/DonateButton'
 
 export default function Home() {
-  const [moreHidden, setMoreHidden] = useState(true)
+  const [showMore, setShowMore] = useState(false)
+
   return (
     <div className="">
-      <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:auto-rows-fr	bg-black text-white min-h-screen">
-        <div className="py-12 px-20 bg-pink-dark relative">
+      <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr bg-black text-white min-h-screen">
+        <div className="py-24 px-24 md:py-12 md:px-12 bg-pink-dark relative sm:h-auto">
           {/* This next/image position:relative  ^ requirement is just weird. */}
           <Image src="/home-logo.png" layout="fill" className="object-contain w-full h-full"></Image>
         </div>
         <div className={`relative`}>
           <Image src="/places/CA-hotel.jpg" layout="fill" className="object-cover"></Image>
         </div>
-        <div className={`py-12 px-6 flex flex-col justify-center items-start ${!moreHidden && 'row-span-2'}`}>
-          <h4 className="uppercase text-xl font-bold mb-6">Black Spaces Matter.</h4>
-          <p className="mb-6">
+        <div
+          className={`py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start ${
+            showMore && 'row-span-2'
+          }`}
+        >
+          <h4 className="uppercase text-8xl md:text-xl font-bold mb-24 md:mb-6">Black Spaces Matter.</h4>
+          <p className="mb-24 m:mb-6">
             The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
             multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and
             historical importance of our neighborhood. We celebrate belonging through the 100 year narrative ribbon that
             leads from the early West Coast civil rights movement through the second wave of the Great Migration to the
             Black Liberation actions of the present day.
           </p>
-          <p className={`mb-6 ${moreHidden && 'hidden'}`}>
+          <p className={`mb-24 m:mb-6 ${!showMore && 'hidden'}`}>
             A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour
             captures oral histories to document the lives and culture of long-time residents, historical figures, and
             rapidly disappearing former Black spaces. We are creating this archive to mitigate cultural erasure and
@@ -35,41 +40,41 @@ export default function Home() {
             and cultural spaces by working towards the reestablishment of the Hoover Durant Public Library branch in our
             neighborhood and acquiring community controlled commercial spaces.
           </p>
-          {moreHidden ? (
+          {!showMore ? (
             <button
-              className="focus:outline-none uppercase text-yellow-500 underline text-xl font-bold no-underline"
+              className="focus:outline-none uppercase text-yellow-500 underline md:text-xl font-bold no-underline"
               style={{ color: 'var(--pink)', borderBottom: 'var(--borderWidth) solid var(--pink)' }}
-              onClick={() => setMoreHidden(false)}
+              onClick={() => setShowMore(true)}
             >
-              More <DownChevron className="inline" />
+              More <DownChevron className="inline h-20 w-20 md:h-5 md:w-5" />
             </button>
           ) : (
-            <button className="focus:outline-none" onClick={() => setMoreHidden(true)}>
-              <Close className="text-xl text-yellow-500 w-10 h-10" />
+            <button className="focus:outline-none" onClick={() => setShowMore(false)}>
+              <Close className="md:text-xl text-yellow-500 h-24 w-24 md:w-10 md:h-10" />
             </button>
           )}
         </div>
-        <div className={`py-12 px-12 bg-red-dark flex flex-col justify-center items-start`}>
-          <h3 className="text-xl uppercase font-bold">
+        <div className={`py-24 px-24 md:py-12 md:px-12 bg-red-dark flex flex-col justify-center items-start`}>
+          <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
             Black Liberation Walking
             <br /> Tour Launch Party
           </h3>
-          <p className="mt-6 mb-6">
+          <p className="mb-24 md:mb-6">
             Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
           </p>
-          <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-3/4">
+          <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-5/6 md:w-3/4">
             RSVP on the Event Page
           </PinkButton>
           <br />
-          <DonateButton className="w-3/4" />
-          <div className="flex-grow" />
-          <p className="mt-6">
+          <DonateButton className="w-5/6 md:w-3/4" />
+          <div className="md:flex-grow mb-24 md:mb-6" />
+          <p className="">
             <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
           </p>
         </div>
-        <div className={`bg-red flex flex-col justify-center items-start ${!moreHidden && 'md:hidden lg:flex'}`}>
+        <div className={`bg-red flex flex-col justify-center items-start ${showMore && 'md:hidden xl:flex'}`}>
           <div
-            className="text-3xl m-auto font-display border-white px-6 py-6"
+            className="text-9xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
             style={{ borderWidth: 'var(--borderWidth)' }}
           >
             <h3 className="border-white pb-3" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
@@ -77,7 +82,11 @@ export default function Home() {
             </h3>
           </div>
         </div>
-        <div className={`p-6 bg-red-dark flex flex-col justify-center items-start ${!moreHidden && 'xl:hidden'}`}>
+        <div
+          className={`py-24 px-24 md:py-12 md:px-12 md:bg-black xl:bg-red-dark flex flex-col justify-center items-start ${
+            showMore && 'xl:hidden'
+          }`}
+        >
           <ContactSection />
           <SubscribeFollowSection />
         </div>
