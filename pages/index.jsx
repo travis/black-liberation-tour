@@ -61,8 +61,8 @@ export default function Home() {
             RSVP on the Event Page
           </PinkButton>
           <br />
-          <br />
           <DonateButton className="w-3/4" />
+          <div className="flex-grow" />
           <p className="mt-6">Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</p>
         </div>
         <div className={`bg-red flex flex-col justify-center items-start ${!moreHidden && 'md:hidden'}`}>
