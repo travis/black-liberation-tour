@@ -19,24 +19,22 @@ export default function Home() {
           <Image src="/places/CA-hotel.jpg" layout="fill" className="object-cover"></Image>
         </div>
         <div className={`py-12 px-6 flex flex-col justify-center items-start ${!moreHidden && 'row-span-2'}`}>
-          <div className="">
-            <h4 className="uppercase text-xl font-bold mb-6">Black Spaces Matter.</h4>
-            <p className="mb-6">
-              The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
-              multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and
-              historical importance of our neighborhood. We celebrate belonging through the 100 year narrative ribbon
-              that leads from the early West Coast civil rights movement through the second wave of the Great Migration
-              to the Black Liberation actions of the present day.
-            </p>
-            <p className={`mb-6 ${moreHidden && 'hidden'}`}>
-              A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour
-              captures oral histories to document the lives and culture of long-time residents, historical figures, and
-              rapidly disappearing former Black spaces. We are creating this archive to mitigate cultural erasure and
-              physical displacement. We're galvanizing a collaborative development effort grounded in claiming community
-              and cultural spaces by working towards the reestablishment of the Hoover Durant Public Library branch in
-              our neighborhood and acquiring community controlled commercial spaces.
-            </p>
-          </div>
+          <h4 className="uppercase text-xl font-bold mb-6">Black Spaces Matter.</h4>
+          <p className="mb-6">
+            The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
+            multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and
+            historical importance of our neighborhood. We celebrate belonging through the 100 year narrative ribbon that
+            leads from the early West Coast civil rights movement through the second wave of the Great Migration to the
+            Black Liberation actions of the present day.
+          </p>
+          <p className={`mb-6 ${moreHidden && 'hidden'}`}>
+            A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour
+            captures oral histories to document the lives and culture of long-time residents, historical figures, and
+            rapidly disappearing former Black spaces. We are creating this archive to mitigate cultural erasure and
+            physical displacement. We're galvanizing a collaborative development effort grounded in claiming community
+            and cultural spaces by working towards the reestablishment of the Hoover Durant Public Library branch in our
+            neighborhood and acquiring community controlled commercial spaces.
+          </p>
           {moreHidden ? (
             <button
               className="focus:outline-none uppercase text-yellow-500 underline text-xl font-bold no-underline"
@@ -51,7 +49,7 @@ export default function Home() {
             </button>
           )}
         </div>
-        <div className={`py-12 px-12 bg-red-dark`}>
+        <div className={`py-12 px-12 bg-red-dark flex flex-col justify-center items-start`}>
           <h3 className="text-xl uppercase font-bold">
             Black Liberation Walking
             <br /> Tour Launch Party
@@ -67,7 +65,7 @@ export default function Home() {
           <DonateButton className="w-3/4" />
           <p className="mt-6">Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</p>
         </div>
-        <div className={`bg-red flex flex-col justify-center ${!moreHidden && 'md:hidden xl:flex'}`}>
+        <div className={`bg-red flex flex-col justify-center items-start ${!moreHidden && 'md:hidden'}`}>
           <div
             className="text-3xl m-auto font-display border-white px-6 py-6"
             style={{ borderWidth: 'var(--borderWidth)' }}
@@ -77,7 +75,7 @@ export default function Home() {
             </h3>
           </div>
         </div>
-        <div className={`p-6 bg-red-dark ${!moreHidden && 'xl:hidden'}`}>
+        <div className={`p-6 bg-red-dark flex flex-col justify-center items-start ${!moreHidden && 'xl:hidden'}`}>
           <ContactSection />
           <SubscribeFollowSection />
         </div>
