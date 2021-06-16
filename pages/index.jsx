@@ -10,7 +10,7 @@ export default function Home() {
   const [moreHidden, setMoreHidden] = useState(true)
   return (
     <div className="">
-      <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-black text-white min-h-screen">
+      <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:auto-rows-fr	bg-black text-white min-h-screen">
         <div className="py-12 px-20 bg-pink-dark relative">
           {/* This next/image position:relative  ^ requirement is just weird. */}
           <Image src="/home-logo.png" layout="fill" className="object-contain w-full h-full"></Image>
@@ -63,9 +63,11 @@ export default function Home() {
           <br />
           <DonateButton className="w-3/4" />
           <div className="flex-grow" />
-          <p className="mt-6">Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</p>
+          <p className="mt-6">
+            <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
+          </p>
         </div>
-        <div className={`bg-red flex flex-col justify-center items-start ${!moreHidden && 'md:hidden'}`}>
+        <div className={`bg-red flex flex-col justify-center items-start ${!moreHidden && 'md:hidden lg:flex'}`}>
           <div
             className="text-3xl m-auto font-display border-white px-6 py-6"
             style={{ borderWidth: 'var(--borderWidth)' }}
