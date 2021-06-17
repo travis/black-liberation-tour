@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row lg:w-2/3">
         <div className="flex flex-col md:w-1/2 text-left p-24 md:p-10">
           <ContactSection />
-          <DonateButton />
+          <DonateButton className="hidden" />
         </div>
         <div className="md:w-1/2 p-24 md:p-10">
           <SubscribeFollowSection />
