@@ -6,7 +6,7 @@ export function TourStopHeader({ name, location, from, to }) {
   return (
     <div className="<TourStopHeader> contents">
       <h1 className="text-9xl md:text-7xl lg:text-5xl text-red mt-24 font-display">
-        <Link href="/">
+        <Link href="/tour">
           <a className="no-underline">{name}</a>
         </Link>
       </h1>
@@ -22,7 +22,7 @@ export function TourStopLogo({ className, ...props }) {
       className={`<TourStopLogo> uppercase font-bold bg-red text-center p-12 text-red-light text-8xl md:text-5xl lg:text-3xl ${className}`}
       {...props}
     >
-      <Link href="/tour">
+      <Link href="/">
         <a className="no-underline">
           Black Liberation
           <br /> Walking Tour

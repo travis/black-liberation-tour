@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { tourStop } from '../../lib/data'
 
 import {
