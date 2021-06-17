@@ -68,7 +68,7 @@ export default function Home() {
               RSVP on the Event Page
             </PinkButton>
             <br />
-            <DonateButton className="hidden w-5/6 md:w-3/4" />
+            <DonateButton className="w-5/6 md:w-3/4" />
             <div className="hidden md:flex-grow mb-24 md:mb-6" />
             <p className="hidden">
               <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
