@@ -43,9 +43,15 @@ export function Instagram({ className }) {
   )
 }
 
-export function Arrow({ className }) {
+export function Arrow({ className, style }) {
   return (
-    <svg width="86.434" height="25.034" viewBox="0 0 86.434 25.034" className={`text-red-dark ${className}`}>
+    <svg
+      width="86.434"
+      height="25.034"
+      viewBox="0 0 86.434 25.034"
+      className={`text-red-dark ${className || ''}`}
+      style={style}
+    >
       <g id="Group_14" data-name="Group 14" transform="translate(85.191 0.76) rotate(90)">
         <path
           id="Path_2"

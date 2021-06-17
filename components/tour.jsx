@@ -1,13 +1,17 @@
 import Link from 'next/link'
 import DirectionsButton from './DirectionsButton'
 import Footer from './Footer'
+import { Arrow } from './icons'
 
 export function TourStopHeader({ name, location, from, to }) {
   return (
     <div className="<TourStopHeader> contents">
       <h1 className="text-9xl md:text-7xl lg:text-5xl text-red mt-24 font-display">
         <Link href="/tour">
-          <a className="no-underline">{name}</a>
+          <a className="no-underline">
+            <Arrow className="mb-12 lg:mb-4" style={{ transform: 'scaleX(-1)' }} />
+            {name}
+          </a>
         </Link>
       </h1>
       <h3 className="lg:text-lg my-10 md:my-6 lg:mb-4 italic">{location}</h3>
