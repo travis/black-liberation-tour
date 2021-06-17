@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import { DownChevron, Close } from '../components/icons'
 import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
@@ -9,7 +10,7 @@ export default function Home() {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <div className="">
+    <div className="<Home>">
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr bg-black text-white min-h-screen">
         <div className="py-24 px-24 md:py-12 md:px-12 bg-pink-dark relative sm:h-auto">
           {/* This next/image position:relative  ^ requirement is just weird. */}
@@ -72,14 +73,16 @@ export default function Home() {
           </p>
         </div>
         <div className={`bg-red flex flex-col justify-center items-start ${showMore && 'md:hidden xl:flex'}`}>
-          <div
-            className="text-8xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
-            style={{ borderWidth: 'var(--borderWidth)' }}
-          >
-            <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
-              Tour Coming Soon
-            </h3>
-          </div>
+          <Link href="/tour">
+            <a
+              className="no-underline block text-8xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
+              style={{ borderWidth: 'var(--borderWidth)' }}
+            >
+              <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
+                Discover The Tour
+              </h3>
+            </a>
+          </Link>
         </div>
         <div
           className={`py-24 px-24 md:py-12 md:px-12 md:bg-black xl:bg-red-dark flex flex-col justify-center items-start ${

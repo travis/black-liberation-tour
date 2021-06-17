@@ -47,7 +47,7 @@ a {
 }
 
 .station-name {
-  @apply p-3 text-black no-underline border-red-dark uppercase;
+  @apply p-6 lg:p-3 text-black no-underline border-red-dark uppercase;
   border-bottom-width: calc(var(--borderWidth) / 2);
 }
 .station-name:hover {
@@ -92,4 +92,15 @@ a {
 .clearfix:after {
   clear: both;
   zoom: 1;
+}
+
+.TourNext {
+  line-height: 1.5;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .TourNext {
+    line-height: 1;
+  }
 }
