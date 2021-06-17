@@ -18,7 +18,7 @@ export default function SubscribeFollowSection() {
           </label>
           <div className="flex flex-row my-7 md:my-2">
             <input
-              className="w-2/3 md:w-auto p-10 md:p-2 bg-pink"
+              className="w-2/3 md:w-auto p-10 md:p-2 bg-pink text-black"
               type="email"
               name="EMAIL"
               id="mce-EMAIL"
