@@ -16,8 +16,8 @@ export default function Home() {
           {/* This next/image position:relative  ^ requirement is just weird. */}
           <img src="/home-logo.png" className="object-contain w-full h-full absolute inset-0" />
         </div>
-        <div className={`relative`}>
-          <img src="/places/CA-hotel.jpg" className="object-cover w-full h-full absolute inset-0" />
+        <div>
+          <img src="/places/CA-hotel.jpg" className="object-cover w-full h-full block" />
         </div>
         <div
           className={`py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start ${
@@ -68,7 +68,7 @@ export default function Home() {
               RSVP on the Event Page
             </PinkButton>
             <br />
-            <DonateButton className="w-5/6 md:w-3/4" />
+            <DonateButton className="hidden w-5/6 md:w-3/4" />
             <div className="hidden md:flex-grow mb-24 md:mb-6" />
             <p className="hidden">
               <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
