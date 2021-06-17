@@ -18,7 +18,7 @@ export default function Home() {
       <TourStopIntro>
         <TourStopLogo />
         <TourStopPhotos>
-          <TourStopPhoto src="/places/california-hotel.png" height={200} width={300} />
+          <TourStopPhoto src="/places/california-hotel.jpg" height={200} width={300} />
         </TourStopPhotos>
       </TourStopIntro>
       <TourStopContent>

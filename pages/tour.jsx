@@ -154,7 +154,7 @@ export default class Tour extends Component {
                 </Link>
                 <Link href="/places/california-hotel">
                   <a className="mosaicflow__item block w-full m-0" height="222">
-                    <Image src="/places/california-hotel.png" height={222} width={300} />
+                    <Image src="/places/california-hotel.jpg" height={222} width={300} />
                   </a>
                 </Link>
               </div>

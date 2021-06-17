@@ -54,23 +54,26 @@ export default function Home() {
             </button>
           )}
         </div>
-        <div className={`py-24 px-24 md:py-12 md:px-12 bg-red-dark flex flex-col justify-center items-start`}>
-          <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
-            Black Liberation Walking
-            <br /> Tour Launch Party
-          </h3>
-          <p className="mb-24 md:mb-6">
-            Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
-          </p>
-          <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-5/6 md:w-3/4">
-            RSVP on the Event Page
-          </PinkButton>
-          <br />
-          <DonateButton className="w-5/6 md:w-3/4" />
-          <div className="hidden md:flex-grow mb-24 md:mb-6" />
-          <p className="hidden">
-            <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
-          </p>
+        <div className={` bg-red-dark relative`} style={{ background: 'url(/flags.svg)', backgroundSize: 'cover' }}>
+          <img className="absolute top-0 left-0 w-full h-full" src="/flags.svg" />
+          <div className="absolute top-0 left-0 w-full h-full py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start">
+            <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
+              Black Liberation Walking
+              <br /> Tour Launch Party
+            </h3>
+            <p className="mb-24 md:mb-6">
+              Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
+            </p>
+            <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-5/6 md:w-3/4">
+              RSVP on the Event Page
+            </PinkButton>
+            <br />
+            <DonateButton className="w-5/6 md:w-3/4" />
+            <div className="hidden md:flex-grow mb-24 md:mb-6" />
+            <p className="hidden">
+              <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
+            </p>
+          </div>
         </div>
         <div className={`bg-red flex flex-col justify-center items-start ${showMore && 'md:hidden xl:flex'}`}>
           <Link href="/tour">

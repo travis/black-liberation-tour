@@ -95,12 +95,5 @@ a {
 }
 
 .TourNext {
-  line-height: 1.5;
-}
-
-/* lg */
-@media (min-width: 1024px) {
-  .TourNext {
-    line-height: 1;
-  }
+  line-height: 1.5 !important;
 }

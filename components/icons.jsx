@@ -45,9 +45,27 @@ export function Instagram({ className }) {
 
 export function Arrow({ className }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" className={`text-red-dark ${className}`}>
-      <line x1="0" y1="50" x2="350" y2="50" stroke="#000" strokeWidth="8" className="stroke-current" />
-      <polyline points="250 4, 350 50, 250 96" fill="none" stroke="#000" strokeWidth="8" className="stroke-current" />
+    <svg width="86.434" height="25.034" viewBox="0 0 86.434 25.034" className={`text-red-dark ${className}`}>
+      <g id="Group_14" data-name="Group 14" transform="translate(85.191 0.76) rotate(90)">
+        <path
+          id="Path_2"
+          data-name="Path 2"
+          d="M0,0,11.678,13.84,23.509,0"
+          transform="translate(23.509 14.142) rotate(180)"
+          fill="none"
+          stroke="#4d1716"
+          stroke-width="2"
+        />
+        <line
+          id="Line_1"
+          data-name="Line 1"
+          y2="85.191"
+          transform="translate(12.063)"
+          fill="none"
+          stroke="#4d1716"
+          stroke-width="2"
+        />
+      </g>
     </svg>
   )
 }

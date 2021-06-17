@@ -10,7 +10,7 @@ export function TourStopHeader({ name, location, from, to }) {
           <a className="no-underline">{name}</a>
         </Link>
       </h1>
-      <h3 className="lg:text-lg mb-4 italic">{location}</h3>
+      <h3 className="lg:text-lg my-10 md:my-6 lg:mb-4 italic">{location}</h3>
       <DirectionsButton from={from} to={to} />
     </div>
   )
