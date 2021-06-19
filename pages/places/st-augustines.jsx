@@ -78,7 +78,13 @@ export default function Home() {
           heavy hand of law enforcement cracked down on the Party. Jonathan Jackson’s memorial service was held here in
           1970 and his brother George’s followed one year later.
         </TourParagraph>
+      </TourStopContent>
 
+      <TourStopMedia />
+
+      <TourStopIntro />
+
+      <TourStopContent>
         <TourParagraph>
           Written behind bars, “Soledad Brother” made George Jackson one of the most influential voices of his
           generation and his murder by prison guards during an alleged escape attempt resulted in a massive outpouring
@@ -92,7 +98,6 @@ export default function Home() {
       </TourStopContent>
 
       <TourStopMedia>
-        <div></div>
         <TourAudio className="my-12" src="/audio/st-augustines-george-jackson.mp3" />
       </TourStopMedia>
 
