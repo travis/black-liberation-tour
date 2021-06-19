@@ -97,3 +97,7 @@ a {
 .TourNext {
   line-height: 1.5 !important;
 }
+
+.TourStopPhoto:not(:first-child) {
+  @apply mt-24 md:mt-10;
+}

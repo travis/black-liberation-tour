@@ -76,8 +76,16 @@ export function TourStopPhotos({ children, className, ...props }) {
   )
 }
 
-export function TourStopPhoto(props) {
-  return <img height={200} width={300} className="w-full object-contain" style={{ maxHeight: '65vh' }} {...props} />
+export function TourStopPhoto({ width = 300, height = 200, className = '', style = {}, ...props }) {
+  return (
+    <img
+      width={width}
+      height={height}
+      className={`TourStopPhoto w-full object-contain ${className}`}
+      style={{ maxHeight: '65vh', ...style }}
+      {...props}
+    />
+  )
 }
 
 export function TourParagraph(props) {

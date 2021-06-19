@@ -19,10 +19,12 @@ export default function Home() {
     <TourStop>
       <TourStopIntro>
         <TourStopLogo />
+
         <TourStopPhotos>
           <TourStopPhoto src="/places/st-augustines.jpg" height={342} width={300} />
         </TourStopPhotos>
       </TourStopIntro>
+
       <TourStopContent>
         <TourStopHeader
           name="St Augustine's Episcopal Church"
@@ -56,12 +58,16 @@ export default function Home() {
           saw the Party’s “Survival Programs” as a threat that needed to be crushed.
         </TourParagraph>
       </TourStopContent>
+
       <TourStopMedia>
         <div></div>
         <TourAudio className="my-12" src="/audio/st-augustines-panthers.mp3" />
       </TourStopMedia>
+
       <TourStopIntro />
-      <TourStopContent className="mt-6">
+
+      {/* <TourStopContent className="mt-6"> */}
+      <TourStopContent>
         <TourParagraph>
           Although some members of St. Augustine’s congregation were hesitant about their church becoming the spiritual
           home of a revolutionary organization, many of these concerns were alleviated during a joint memorial event for
@@ -72,6 +78,7 @@ export default function Home() {
           heavy hand of law enforcement cracked down on the Party. Jonathan Jackson’s memorial service was held here in
           1970 and his brother George’s followed one year later.
         </TourParagraph>
+
         <TourParagraph>
           Written behind bars, “Soledad Brother” made George Jackson one of the most influential voices of his
           generation and his murder by prison guards during an alleged escape attempt resulted in a massive outpouring
@@ -83,11 +90,34 @@ export default function Home() {
           Jackson’s death.
         </TourParagraph>
       </TourStopContent>
+
       <TourStopMedia>
         <div></div>
         <TourAudio className="my-12" src="/audio/st-augustines-george-jackson.mp3" />
       </TourStopMedia>
+
+      <TourStopIntro>
+        <TourStopPhotos>
+          <TourStopPhoto src="/places/st-augustines-FatherNeil_HueyNewton.jpg" height={342} width={300} />
+        </TourStopPhotos>
+      </TourStopIntro>
+
+      <TourStopContent>
+        <TourParagraph>
+          Bonus clip: When Elaine Brown was the editor of the Black Panther Party’s newspaper, she visited George
+          Jackson in San Quentin Prison shortly before his death. Although George was heavily shackled with chains
+          during that meeting, Brown remembers him as possessing a great amount of dignity and determination. Press the
+          play button to hear Elaine Brown discuss how she worked with George Jackson’s mother to arrange the funeral
+          here at St. Augustine’s and why she remembers Huey Newton’s speech as the highlight of that tragic day.
+        </TourParagraph>
+      </TourStopContent>
+
+      <TourStopMedia>
+        <TourAudio className="my-12" src="/audio/st-augustines-ElaineBrown.mp3" />
+      </TourStopMedia>
+
       <TourStopIntro />
+
       <TourNext href="/places/annette-miller">Annette Miller</TourNext>
       <div></div>
     </TourStop>
