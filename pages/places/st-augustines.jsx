@@ -33,6 +33,12 @@ export default function Home() {
         />
 
         <TourParagraph>
+          Note: St. Augustine's dates back to 1910; the building at 27th and West was constructed in 1920.
+          St. Augustine's merged with Trinity Episcopal Church in 1975. Today the combined congregation meets
+          at the red church building at Telegraph Avenue and 29th St. with the St. Augustine's name.
+        </TourParagraph>
+
+        <TourParagraph>
           Father Earl Neil was no stranger to conflict when he came to Oakland in 1967 to serve as the Rector of St.
           Augustine’s Episcopal Church. Originally from Minnesota, Father Neil was the only Black student in his
           seminary class and constantly had to challenge racism in the church hierarchy throughout his early career. As
