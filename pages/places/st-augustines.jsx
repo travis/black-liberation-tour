@@ -28,7 +28,7 @@ export default function Home() {
       <TourStopContent>
         <TourStopHeader
           name="St Augustine's Episcopal Church"
-          location="525 29th Street"
+          location="2624 West Street"
           to={tourStop['st-augustines']}
         />
 
