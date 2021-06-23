@@ -1,7 +1,7 @@
 export default function DirectionsButton({ to, from }) {
   const query = from
     ? `engine=fossgis_osrm_foot&route=${from.lat}%2C${from.lng}%3B${to.lat}%2C${to.lng}`
-    : `engine=fossgis_osrm_foot&route=%3B${to.lat}%2C${to.lng}`
+    : `engine=fossgis_osrm_foot&route=%3B${to.lat}%2C${to.lng}#map=15/${to.lat}/${to.lng}`
   return (
     <a
       href={`https://www.openstreetmap.org/directions?${query}`}
