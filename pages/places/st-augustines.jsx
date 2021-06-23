@@ -34,7 +34,7 @@ export default function Home() {
 
         <TourParagraph>
           Note: St. Augustine's dates back to 1910; the building at 27th and West was constructed in 1920.
-          St. Augustine's later merged with Trinity Episcopal Church. Today the combined congregation meets
+          St. Augustine's merged with Trinity Episcopal Church in 1975. Today the combined congregation meets
           at the red church building at Telegraph Avenue and 29th St. with the St. Augustine's name.
         </TourParagraph>
 
