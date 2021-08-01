@@ -26,19 +26,19 @@ export default function Home() {
         >
           <h4 className="uppercase text-8xl md:text-xl font-bold mb-24 md:mb-6">Black Spaces Matter.</h4>
           <p className="mb-24 md:mb-6">
-            The Black Liberation Walking Tour is a community-led cultural asset map that celebrates Hoover Durant’s
-            multigenerational Black history and culture, asserts resident voice, and documents sites of cultural and
-            historical importance of our neighborhood. We celebrate belonging through the 100 year narrative ribbon that
-            leads from the early West Coast civil rights movement through the second wave of the Great Migration to the
-            Black Liberation actions of the present day.
+            The Black Liberation Walking Tour (BLWT) is a community-led cultural asset map celebrating Hoover-Foster’s
+            multi-generational Black history and culture. It asserts resident voices and documents sites of cultural and
+            historical significance in our neighborhood. We celebrate belonging through the 100 year narrative ribbon
+            leading from the early West Coast civil rights movement through the second wave of the Great Migration to
+            the Black Liberation actions of the present day.
           </p>
           <p className={`mb-24 md:mb-6 ${!showMore && 'hidden'}`}>
-            A project of the Friends of the Hoover-Durant Public Library (FOHDPL), the Black Liberation Walking Tour
-            captures oral histories to document the lives and culture of long-time residents, historical figures, and
-            rapidly disappearing former Black spaces. We are creating this archive to mitigate cultural erasure and
-            physical displacement. We're galvanizing a collaborative development effort grounded in claiming community
-            and cultural spaces by working towards the reestablishment of the Hoover Durant Public Library branch in our
-            neighborhood and acquiring community controlled commercial spaces.
+            A project of the West Oakland Cultural Action Network (WOCAN) , the BLWT captures oral histories to document
+            the lives, art, and culture of long-time residents, historical figures, and rapidly disappearing former
+            Black cultural spaces. We are creating this archive to mitigate cultural erasure and physical displacement.
+            We’re galvanizing a collaborative development effort grounded in claiming community and cultural spaces by
+            working towards the reestablishment of the Hoover-Durant Public Library branch and acquiring community
+            controlled commercial spaces.
           </p>
           {!showMore ? (
             <button
