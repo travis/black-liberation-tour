@@ -58,11 +58,11 @@ export default function Home() {
           <img className="absolute top-0 left-0 w-full h-full" src="/flags.svg" />
           <div className="absolute top-0 left-0 w-full h-full py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start">
             <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
-              Black Liberation Walking
-              <br /> Tour Launch Party
+              Black Liberation Walking <br />
+              Tour Mural Unveiling
             </h3>
             <p className="mb-24 md:mb-6">
-              Join us on Juneteenth for the official launch of the Black Liberation Walking Tour.
+              Join us on August 7th for the unveiling of the new Black Liberation Walking Tour mural
             </p>
             <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-5/6 md:w-3/4">
               RSVP on the Event Page
