@@ -64,14 +64,22 @@ export default function Home() {
             <p className="mb-24 md:mb-6">
               Join us on August 7th for the unveiling of the new Black Liberation Walking Tour mural
             </p>
-            <PinkButton href="https://www.facebook.com/events/572413663743456" className="w-5/6 md:w-3/4">
-              RSVP on the Event Page
-            </PinkButton>
-            <br />
             <DonateButton className="w-5/6 md:w-3/4" />
             <div className="hidden md:flex-grow mb-24 md:mb-6" />
-            <p className="hidden">
-              <em>Thank you sponsors NAME and NAME NAME for allocating the grant and making this happen!</em>
+            <br />
+            <p>
+              <em>
+                <strong>Thank you to our sponsors!</strong>
+              </em>
+            </p>
+            {/* prettier-ignore */}
+            <p>
+                <a className="inline-block pr-5" href="https://communityvisionca.org/">Community Vision</a>
+                <a className="inline-block pr-5" href="https://www.penumbrainc.com/">Penumbra</a>
+                <a className="inline-block pr-5" href="https://ebaldc.org/">EBALDC</a>
+                <a className="inline-block pr-5" href="https://www.flourishcollective.com/">Flourish Collective</a>
+                <a className="inline-block pr-5" href="https://www.mlb.com/athletics">Oakland Athletics</a>
+                <a className="inline-block pr-5" href="https://www.nba.com/warriors/">Golden State Warriors</a>
             </p>
           </div>
         </div>

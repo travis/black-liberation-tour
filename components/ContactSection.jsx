@@ -13,6 +13,11 @@ export default function ContactSection() {
         </a>
         .
       </p>
+      <p className="mb-20 md:mb-6">
+        <span className="font-bold">Publications about us:</span>
+        <br />
+        <a href="https://www.eastbayyesterday.com/?s=Hoover-Foster+Stories">East Bay Yesterday</a>
+      </p>
     </>
   )
 }
