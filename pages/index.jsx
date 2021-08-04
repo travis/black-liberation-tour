@@ -77,7 +77,7 @@ export default function Home() {
                 <a className="inline-block pr-5" href="https://communityvisionca.org/">Community Vision</a>
                 <a className="inline-block pr-5" href="https://www.penumbrainc.com/">Penumbra</a>
                 <a className="inline-block pr-5" href="https://ebaldc.org/">EBALDC</a>
-                <a className="inline-block pr-5" href="https://www.flourishcollective.com/">Flourish Collective</a>
+                <a className="inline-block pr-5" href="https://www.theflourishcollective.org/">Flourish Collective</a>
                 <a className="inline-block pr-5" href="https://www.mlb.com/athletics">Oakland Athletics</a>
                 <a className="inline-block pr-5" href="https://www.nba.com/warriors/">Golden State Warriors</a>
             </p>
