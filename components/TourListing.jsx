@@ -1,5 +1,4 @@
 // @ts-check
-import Image from 'next/image'
 import Link from 'next/link'
 import { Component, createRef } from 'react'
 import ReactTooltip from 'react-tooltip'

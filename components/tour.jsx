@@ -29,7 +29,23 @@ export function TourStopHeader({ name, location, from, to }) {
   )
 }
 
-export function TourStopLogo({ className, title, ...props }) {
+/**
+ * @param {{
+ *   className: string
+ *   title: string | import('react').ReactElement
+ * }} props
+ */
+export function TourStopLogo({
+  className,
+  title = (
+    <>
+      Black Liberation
+      <br />
+      Walking Tour
+    </>
+  ),
+  ...props
+}) {
   return (
     <div
       className={`<TourStopLogo> uppercase font-bold bg-red text-center p-12 text-red-light text-8xl md:text-5xl lg:text-3xl ${className}`}
