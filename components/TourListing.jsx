@@ -65,7 +65,7 @@ export default class TourListing extends Comp {
               {this.props.stops.map(spot => (
                 <Link href={spot.slug}>
                   <a className="mosaicflow__item block w-full m-0" data-tip={spot.name}>
-                    <Image src={spot.img} height={222} width={300} />
+                    <img src={spot.img} />
                   </a>
                 </Link>
               ))}
