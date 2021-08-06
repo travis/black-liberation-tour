@@ -8,7 +8,7 @@ import { TourStopLogo } from '../components/tour'
  *   left: import('react').ReactElement
  *   middle: import('react').ReactElement
  *   right: import('react').ReactElement
- *   classes: Partial<Record<'left' | 'middle' | 'right', string>>
+ *   classes?: Partial<Record<'left' | 'middle' | 'right', string>>
  *   title: import('react').ReactElement
  * }, {}>}
  */
