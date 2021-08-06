@@ -27,8 +27,8 @@ export default function Dellums() {
         <TourStopHeader
           name="C.L. Dellums"
           location="829 Brockhurst"
-          from={tourStop['delilah-beasley-house']}
-          to={tourStop['cl-dellums']}
+          from={tourStop['/places/delilah-beasley-house']}
+          to={tourStop['/places/cl-dellums']}
         />
 
         <TourParagraph>

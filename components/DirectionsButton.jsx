@@ -1,3 +1,11 @@
+// @ts-check
+
+/**
+ * @param {{
+ *   to: import("../lib/data").TourStop
+ *   from: import("../lib/data").TourStop
+ * }} props
+ */
 export default function DirectionsButton({ to, from }) {
   const query = from
     ? `engine=fossgis_osrm_foot&route=${from.lat}%2C${from.lng}%3B${to.lat}%2C${to.lng}`

@@ -1,8 +1,17 @@
+// @ts-check
 import Link from 'next/link'
 import DirectionsButton from './DirectionsButton'
 import Footer from './Footer'
 import { Arrow } from './icons'
 
+/**
+ * @param {{
+ *   name: string
+ *   location: string
+ *   from?: import('../lib/data').TourStop
+ *   to: import('../lib/data').TourStop
+ * }} props
+ */
 export function TourStopHeader({ name, location, from, to }) {
   return (
     <div className="<TourStopHeader> contents">
@@ -20,17 +29,14 @@ export function TourStopHeader({ name, location, from, to }) {
   )
 }
 
-export function TourStopLogo({ className, ...props }) {
+export function TourStopLogo({ className, title, ...props }) {
   return (
     <div
       className={`<TourStopLogo> uppercase font-bold bg-red text-center p-12 text-red-light text-8xl md:text-5xl lg:text-3xl ${className}`}
       {...props}
     >
       <Link href="/">
-        <a className="no-underline">
-          Black Liberation
-          <br /> Walking Tour
-        </a>
+        <a className="no-underline">{title}</a>
       </Link>
     </div>
   )

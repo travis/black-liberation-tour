@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
 import { tourStop } from '../../lib/data'
 
 import {
@@ -29,8 +27,8 @@ export default function NorthOaklandLibrary() {
         <TourStopHeader
           name="North Oakland Branch Library"
           location="30th and San Pablo"
-          from={tourStop['ymca']}
-          to={tourStop['north-oakland-library']}
+          from={tourStop['/places/ymca']}
+          to={tourStop['/places/north-oakland-library']}
         />
         <TourParagraph>
           As a young girl growing up in this neighborhood, Alternier Cook has fond memories of spending time at the

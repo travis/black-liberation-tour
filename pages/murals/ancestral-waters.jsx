@@ -1,3 +1,4 @@
+// @ts-check
 import { tourStop } from '../../lib/data'
 
 import {

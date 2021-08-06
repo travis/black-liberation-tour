@@ -1,10 +1,10 @@
 import { Component } from 'react'
-import Page from '../components/Page'
+import ThreeColumnPage from '../components/Page'
 
 export default class Donate extends Component {
   render() {
     return (
-      <Page
+      <ThreeColumnPage
         left={<img src="/places/CA-hotel.jpg" className="object-cover w-full h-full block" />}
         middle={'middle'}
         right={'right'}

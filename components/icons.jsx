@@ -43,7 +43,7 @@ export function Instagram({ className }) {
   )
 }
 
-export function Arrow({ className, style }) {
+export function Arrow({ className, style = {} }) {
   return (
     <svg
       width="86.434"

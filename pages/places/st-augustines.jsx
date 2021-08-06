@@ -1,4 +1,4 @@
-import Link from 'next/link'
+// @ts-check
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
@@ -29,13 +29,13 @@ export default function Home() {
         <TourStopHeader
           name="St Augustine's Episcopal Church"
           location="2624 West Street"
-          to={tourStop['st-augustines']}
+          to={tourStop['/places/st-augustines']}
         />
 
         <TourParagraph>
-          Note: St. Augustine's dates back to 1910; the building at 27th and West was constructed in 1920.
-          St. Augustine's merged with Trinity Episcopal Church in 1975. Today the combined congregation meets
-          at the red church building at Telegraph Avenue and 29th St. with the St. Augustine's name.
+          Note: St. Augustine's dates back to 1910; the building at 27th and West was constructed in 1920. St.
+          Augustine's merged with Trinity Episcopal Church in 1975. Today the combined congregation meets at the red
+          church building at Telegraph Avenue and 29th St. with the St. Augustine's name.
         </TourParagraph>
 
         <TourParagraph>

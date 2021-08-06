@@ -28,8 +28,8 @@ export default function Freeways() {
         <TourStopHeader
           name="Surrounded By Freeways"
           location="34th and Martin Luther King, Jr. Way"
-          from={tourStop['annette-miller']}
-          to={tourStop['freeways']}
+          from={tourStop['/places/annette-miller']}
+          to={tourStop['/places/freeways']}
         />
         <TourParagraph>
           If you look at a map of West Oakland, you’ll see that the entire area is boxed in by freeways. Where you are

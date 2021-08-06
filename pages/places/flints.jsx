@@ -27,8 +27,8 @@ export default function Home() {
         <TourStopHeader
           name="Flint's BBQ"
           location="3114 San Pablo Ave"
-          from={tourStop['north-oakland-library']}
-          to={tourStop['flints']}
+          from={tourStop['/places/north-oakland-library']}
+          to={tourStop['/places/flints']}
         />
         <TourParagraph>
           Close your eyes and imagine the sweet, smokey smell of ribs and hot links wafting out of this building and

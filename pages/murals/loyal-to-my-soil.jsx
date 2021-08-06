@@ -27,8 +27,8 @@ export default function AnnetteMiller() {
         <TourStopHeader
           name="Annette Miller"
           location="682 30th St, Oakland"
-          from={tourStop['/places/st-augustines']}
-          to={tourStop['/places/annette-miller']}
+          from={tourStop['st-augustines']}
+          to={tourStop['annette-miller']}
         />
 
         <TourParagraph>

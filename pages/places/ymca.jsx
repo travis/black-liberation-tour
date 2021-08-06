@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
+// @ts-check
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
@@ -28,8 +27,8 @@ export default function Home() {
         <TourStopHeader
           name="Northwest Branch YMCA"
           location="Corner of Brockhurst and Market"
-          from={tourStop['cl-dellums']}
-          to={tourStop['ymca']}
+          from={tourStop['/places/cl-dellums']}
+          to={tourStop['/places/ymca']}
         />
 
         <TourParagraph>

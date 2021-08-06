@@ -25,8 +25,8 @@ export default function Home() {
         <TourStopHeader
           name="California Hotel"
           location="35th and San Pablo"
-          from={tourStop['flints']}
-          to={tourStop['california-hotel']}
+          from={tourStop['/places/flints']}
+          to={tourStop['/places/california-hotel']}
         />
         <TourParagraph>
           Few buildings reflect the past century of Oakland’s ever-shifting culture better than the California Hotel.

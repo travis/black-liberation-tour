@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import DirectionsButton from '../../components/DirectionsButton'
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
@@ -28,8 +26,8 @@ export default function Delilah() {
         <TourStopHeader
           name="Delilah Beasley House"
           location="705 34th Street"
-          from={tourStop['freeways']}
-          to={tourStop['delilah-beasley-house']}
+          from={tourStop['/places/freeways']}
+          to={tourStop['/places/delilah-beasley-house']}
         />
 
         <TourParagraph>

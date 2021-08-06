@@ -1,8 +1,15 @@
+// @ts-check
 import Link from 'next/link'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-const center = [37.820064, -122.273499]
-
+/**
+ * @param {{
+ *   markers?: Array<import('../lib/data').TourStop>
+ *   className: string
+ *   zoom: number
+ *   center: [number, number]
+ * }} options
+ */
 export default function Map({ markers, ...props }) {
   return (
     <MapContainer scrollWheelZoom={false} {...props}>
@@ -11,12 +18,12 @@ export default function Map({ markers, ...props }) {
         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
       />
       {markers &&
-        markers.map(([lat, long, title, addressTitle, slug]) => (
-          <Marker position={[lat, long]} key={slug}>
+        markers.map(({ lat, lng, name, address, slug }) => (
+          <Marker position={[lat, lng]} key={slug}>
             <Popup>
-              <Link href={`/places/${slug}`}>
+              <Link href={slug}>
                 <a>
-                  {title} - {addressTitle}
+                  {name} - {address}
                 </a>
               </Link>
             </Popup>
