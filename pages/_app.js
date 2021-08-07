@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
-      <body className="text-7xl md:text-3xl lg:text-xl">
+      <body className="leading-normal text-7xl md:text-3xl lg:text-xl">
         <Component {...pageProps} />
       </body>
     </>

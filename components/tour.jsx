@@ -127,7 +127,7 @@ export function TourParagraph(props) {
 export function TourNext({ href, children }) {
   return (
     <Link href={href}>
-      <a className="TourNext mx-24 md:mx-10 col-span-5 block no-underline mt-6 bg-red text-white p-8 pb-12 lg:p-4 lg:pb-6 text-6xl md:text-5xl lg:text-3xl text-center uppercase mb-0 lg:mb-10">
+      <a className="TourNext mx-24 md:mx-10 col-span-5 block no-underline mt-6 bg-red text-white p-8 pb-12 lg:p-4 lg:pb-6 text-7xl md:text-5xl lg:text-3xl text-center uppercase mb-0 lg:mb-10">
         <span style={{ borderBottom: 'var(--borderWidth) solid white' }}>Next Stop: {children}</span>
       </a>
     </Link>
