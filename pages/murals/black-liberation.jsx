@@ -1,3 +1,7 @@
+// @ts-check
+import { MuralStop } from '../../components/MuralStop'
+import { muralStops } from '../../lib/data'
+
 export default function () {
-  return <div>TODO...</div>
+  return <MuralStop {...muralStops.find(s => s.slug == '/murals/black-liberation')} />
 }

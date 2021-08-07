@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,13 +17,13 @@ import {
 export default function Home() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/flints.jpg" height={222} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="Flint's BBQ"
           location="3114 San Pablo Ave"
@@ -67,12 +67,12 @@ export default function Home() {
         <h4 className="mt-1 mb-12">
           <a href="https://facebook.com/originalflintsbbq/">Flint’s BBQ on Facebook</a>
         </h4>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/flints.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/california-hotel">California Hotel</TourNext>
       <div></div>
     </TourStop>

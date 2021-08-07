@@ -2,11 +2,11 @@
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,13 +17,13 @@ import {
 export default function Home() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/ymca.jpg" height={241} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="Northwest Branch YMCA"
           location="Corner of Brockhurst and Market"
@@ -69,12 +69,12 @@ export default function Home() {
           Press PLAY below to hear Mary Ellen Butler discuss the history of the Northwest Branch YMCA as an incubator of
           rising Black leadership.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/ymca.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/north-oakland-library">North Oakland Branch Library</TourNext>
       <div></div>
     </TourStop>

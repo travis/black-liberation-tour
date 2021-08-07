@@ -2,11 +2,11 @@ import { tourStop } from '../../lib/data'
 
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,13 +17,13 @@ import {
 export default function NorthOaklandLibrary() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/north-oakland-library.jpg" height={243} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="North Oakland Branch Library"
           location="30th and San Pablo"
@@ -62,12 +62,12 @@ export default function NorthOaklandLibrary() {
           Click the play button below to hear Alternier Cook discuss the origins of Friends of Hoover-Durant Public
           Library.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/north-oakland-library.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/flints">Flint's BBQ</TourNext>
       <div></div>
     </TourStop>

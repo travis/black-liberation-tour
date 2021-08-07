@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,13 +17,13 @@ import {
 export default function Dellums() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/cl-dellums.jpg" height={220} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="C.L. Dellums"
           location="829 Brockhurst"
@@ -73,12 +73,12 @@ export default function Dellums() {
           conditions for the many Pullman porters who called West Oakland home. Press the play button below to hear C.L.
           Dellums and his daughter Marva discussing this historic struggle.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/cl-dellums.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/ymca">Northwest Branch YMCA</TourNext>
       <div></div>
     </TourStop>

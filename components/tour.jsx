@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import DirectionsButton from './DirectionsButton'
 import Footer from './Footer'
-import { Arrow } from './icons'
+import { Arrow, Instagram } from './icons'
 
 /**
  * @param {{
@@ -10,13 +10,14 @@ import { Arrow } from './icons'
  *   location: string
  *   from?: import('../lib/data').TourStop
  *   to: import('../lib/data').TourStop
+ *   href?: string
  * }} props
  */
-export function TourStopHeader({ name, location, from, to }) {
+export function TourStopHeader({ name, location, from, to, href = '/tour' }) {
   return (
-    <div className="<TourStopHeader> contents">
+    <div className="<TourStopHeader>">
       <h1 className="text-9xl md:text-7xl lg:text-5xl text-red mt-24 font-display">
-        <Link href="/tour">
+        <Link href={href}>
           <a className="no-underline">
             <Arrow className="mb-12 lg:mb-4" style={{ transform: 'scaleX(-1)' }} />
             {name}
@@ -31,17 +32,15 @@ export function TourStopHeader({ name, location, from, to }) {
 
 /**
  * @param {{
- *   className: string
- *   title: string | import('react').ReactElement
+ *   className?: string
+ *   title?: string | import('react').ReactElement
  * }} props
  */
 export function TourStopLogo({
-  className,
+  className = '',
   title = (
     <>
-      Black Liberation
-      <br />
-      Walking Tour
+      Black Liberation <br /> Walking Tour
     </>
   ),
   ...props
@@ -76,21 +75,34 @@ export function TourStop({ children }) {
   )
 }
 
-export function TourStopIntro({ className, ...props }) {
+export function TourStopLeft({ className = '', ...props }) {
   return <section className={`text-center bg-yellow col-span-4 ${className}`} {...props} />
 }
 
-export function TourStopContent({ className, ...props }) {
+export function TourStopMiddle({ className = '', ...props }) {
   return <section className={`mx-24 md:mx-10 col-span-5 ${className}`} {...props} />
 }
 
-export function TourStopMedia({ className, ...props }) {
+export function TourStopRight({ className = '', ...props }) {
   return (
     <section className={`flex flex-col justify-between col-span-3 ml-24 md:ml-10 lg:ml-0 ${className}`} {...props} />
   )
 }
 
-export function TourStopPhotos({ children, className, ...props }) {
+export function MuralStopLeft({ className = '', ...props }) {
+  return <section className={`text-center bg-white col-span-9 lg:mt-10 lg:mb-5 lg:pl-10 ${className}`} {...props} />
+}
+
+export function MuralStopRight({ className = '', ...props }) {
+  return (
+    <section
+      className={`flex flex-col col-span-3 bg-pink ml-24 md:ml-10 lg:ml-0 lg:mt-10 lg:mb-5 lg:p-10 ${className}`}
+      {...props}
+    />
+  )
+}
+
+export function TourStopPhotos({ children, className = '', ...props }) {
   return (
     <section className={`${className} lg:mt-10 lg:px-10`} {...props}>
       {children}
@@ -98,16 +110,8 @@ export function TourStopPhotos({ children, className, ...props }) {
   )
 }
 
-export function TourStopPhoto({ width = 300, height = 200, className = '', style = {}, ...props }) {
-  return (
-    <img
-      width={width}
-      height={height}
-      className={`TourStopPhoto w-full object-contain ${className}`}
-      style={{ maxHeight: '65vh', ...style }}
-      {...props}
-    />
-  )
+export function TourStopPhoto({ className = '', ...props }) {
+  return <img className={`TourStopPhoto w-full object-contain ${className}`} {...props} />
 }
 
 export function TourParagraph(props) {
@@ -121,5 +125,50 @@ export function TourNext({ href, children }) {
         <span style={{ borderBottom: 'var(--borderWidth) solid white' }}>Next Stop: {children}</span>
       </a>
     </Link>
+  )
+}
+
+/** @param {import('../lib/data').MuralStop} props */
+export function MuralInfo({ artists = [], blurb = '', date = '', description = '' }) {
+  return (
+    <>
+      {artists.length ? (
+        <>
+          <span>Artists:</span>
+          <br />
+          {artists.map(({ name, instagram }) => (
+            <>
+              <span className="font-bold">{name}</span>
+              {instagram && (
+                <a className="font-bold no-underline" href={'https://instagram.com/' + instagram}>
+                  <Instagram className="inline-block transform scale-125 mr-1" />
+                  {instagram}
+                </a>
+              )}
+              <br />
+            </>
+          ))}
+        </>
+      ) : null}
+      {date && (
+        <>
+          <br />
+          <span>Painted: {date}</span>
+        </>
+      )}
+      {blurb && (
+        <>
+          <br />
+          <span dangerouslySetInnerHTML={{ __html: blurb }}></span>
+        </>
+      )}
+      {/* TODO move description below the image per the design. */}
+      {description && (
+        <>
+          <br />
+          <span dangerouslySetInnerHTML={{ __html: description }}></span>
+        </>
+      )}
+    </>
   )
 }

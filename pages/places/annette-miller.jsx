@@ -1,12 +1,13 @@
+// @ts-check
 import { tourStop } from '../../lib/data'
 
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,13 +18,14 @@ import {
 export default function AnnetteMiller() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/annette-miller.jpg" height={200} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+
+      <TourStopMiddle>
         <TourStopHeader
           name="Annette Miller"
           location="682 30th St, Oakland"
@@ -66,12 +68,13 @@ export default function AnnetteMiller() {
           Click the play to hear the story of what happened during Annete’s showdown with a massive international
           financial institution.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/annette-miller.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+
+      <TourStopLeft />
       <TourNext href="/places/freeways">Surrounded By Freeways</TourNext>
       <div></div>
     </TourStop>

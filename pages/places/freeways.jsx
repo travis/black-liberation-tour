@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -18,13 +18,13 @@ import {
 export default function Freeways() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/freeways.jpg" height={150} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="Surrounded By Freeways"
           location="34th and Martin Luther King, Jr. Way"
@@ -73,12 +73,12 @@ export default function Freeways() {
           resident Alternier Cook describe what this neighborhood was like before the freeways appeared and how their
           construction immediately impacted her health.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/freeways.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/delilah-beasley-house">Delilah Beasley House</TourNext>
       <div></div>
     </TourStop>

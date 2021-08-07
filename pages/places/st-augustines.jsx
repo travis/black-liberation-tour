@@ -2,11 +2,11 @@
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -17,15 +17,15 @@ import {
 export default function Home() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
 
         <TourStopPhotos>
           <TourStopPhoto src="/places/st-augustines.jpg" height={342} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
+      </TourStopLeft>
 
-      <TourStopContent>
+      <TourStopMiddle>
         <TourStopHeader
           name="St Augustine's Episcopal Church"
           location="2624 West Street"
@@ -63,17 +63,17 @@ export default function Home() {
           Panther leader David Hilliard stopped the police from raiding the church, and why FBI director J. Edgar Hoover
           saw the Party’s “Survival Programs” as a threat that needed to be crushed.
         </TourParagraph>
-      </TourStopContent>
+      </TourStopMiddle>
 
-      <TourStopMedia>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/st-augustines-panthers.mp3" />
-      </TourStopMedia>
+      </TourStopRight>
 
-      <TourStopIntro />
+      <TourStopLeft />
 
-      {/* <TourStopContent className="mt-6"> */}
-      <TourStopContent>
+      {/* <TourStopMiddle className="mt-6"> */}
+      <TourStopMiddle>
         <TourParagraph>
           Although some members of St. Augustine’s congregation were hesitant about their church becoming the spiritual
           home of a revolutionary organization, many of these concerns were alleviated during a joint memorial event for
@@ -84,13 +84,13 @@ export default function Home() {
           heavy hand of law enforcement cracked down on the Party. Jonathan Jackson’s memorial service was held here in
           1970 and his brother George’s followed one year later.
         </TourParagraph>
-      </TourStopContent>
+      </TourStopMiddle>
 
-      <TourStopMedia />
+      <TourStopRight />
 
-      <TourStopIntro />
+      <TourStopLeft />
 
-      <TourStopContent>
+      <TourStopMiddle>
         <TourParagraph>
           Written behind bars, “Soledad Brother” made George Jackson one of the most influential voices of his
           generation and his murder by prison guards during an alleged escape attempt resulted in a massive outpouring
@@ -101,19 +101,19 @@ export default function Home() {
           also includes archival audio of Black Panthers co-founder Bobby Seale discussing the Party’s response to
           Jackson’s death.
         </TourParagraph>
-      </TourStopContent>
+      </TourStopMiddle>
 
-      <TourStopMedia>
+      <TourStopRight>
         <TourAudio className="my-12" src="/audio/st-augustines-george-jackson.mp3" />
-      </TourStopMedia>
+      </TourStopRight>
 
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopPhotos>
           <TourStopPhoto src="/places/st-augustines-FatherNeil_HueyNewton.jpg" height={342} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
+      </TourStopLeft>
 
-      <TourStopContent>
+      <TourStopMiddle>
         <TourParagraph>
           Bonus clip: When Elaine Brown was the editor of the Black Panther Party’s newspaper, she visited George
           Jackson in San Quentin Prison shortly before his death. Although George was heavily shackled with chains
@@ -121,13 +121,13 @@ export default function Home() {
           play button to hear Elaine Brown discuss how she worked with George Jackson’s mother to arrange the funeral
           here at St. Augustine’s and why she remembers Huey Newton’s speech as the highlight of that tragic day.
         </TourParagraph>
-      </TourStopContent>
+      </TourStopMiddle>
 
-      <TourStopMedia>
+      <TourStopRight>
         <TourAudio className="my-12" src="/audio/st-augustines-ElaineBrown.mp3" />
-      </TourStopMedia>
+      </TourStopRight>
 
-      <TourStopIntro />
+      <TourStopLeft />
 
       <TourNext href="/places/annette-miller">Annette Miller</TourNext>
       <div></div>

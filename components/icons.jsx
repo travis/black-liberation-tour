@@ -33,7 +33,7 @@ export function Facebook({ className }) {
   )
 }
 
-export function Instagram({ className }) {
+export function Instagram({ className = '' }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={`h-5 w-5 ${className}`}>
       <path d="M11.999 7.377a4.623 4.623 0 100 9.248 4.623 4.623 0 000-9.248zm0 7.627a3.004 3.004 0 110-6.008 3.004 3.004 0 010 6.008z" />

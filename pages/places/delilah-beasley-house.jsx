@@ -1,11 +1,11 @@
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -16,13 +16,13 @@ import {
 export default function Delilah() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/delilah-beasley-house.jpg" height={380} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="Delilah Beasley House"
           location="705 34th Street"
@@ -60,12 +60,12 @@ export default function Delilah() {
           where she lived the last years of her life. Press play below to hear more about Delilah Beasley from another
           champion of Black history, Dorothy Lazard of the Oakland Public Library.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/delilah-beasley-house.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
+      </TourStopRight>
+      <TourStopLeft />
       <TourNext href="/places/cl-dellums">C.L. Dellums</TourNext>
       <div></div>
     </TourStop>

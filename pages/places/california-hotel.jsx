@@ -1,11 +1,11 @@
 import { tourStop } from '../../lib/data'
 import {
   TourStop,
-  TourStopIntro,
+  TourStopLeft,
   TourStopLogo,
-  TourStopContent,
+  TourStopMiddle,
   TourStopHeader,
-  TourStopMedia,
+  TourStopRight,
   TourAudio,
   TourStopPhotos,
   TourStopPhoto,
@@ -15,13 +15,13 @@ import {
 export default function Home() {
   return (
     <TourStop>
-      <TourStopIntro>
+      <TourStopLeft>
         <TourStopLogo />
         <TourStopPhotos>
           <TourStopPhoto src="/places/california-hotel.jpg" height={200} width={300} />
         </TourStopPhotos>
-      </TourStopIntro>
-      <TourStopContent>
+      </TourStopLeft>
+      <TourStopMiddle>
         <TourStopHeader
           name="California Hotel"
           location="35th and San Pablo"
@@ -64,13 +64,13 @@ export default function Home() {
           below to hear Laird explain how he combined his spiritual and artistic practices to turn Expressions Art
           Gallery into a much-needed community resource.
         </TourParagraph>
-      </TourStopContent>
-      <TourStopMedia>
+      </TourStopMiddle>
+      <TourStopRight>
         <div></div>
         <TourAudio className="my-12" src="/audio/california-hotel.mp3" />
-      </TourStopMedia>
-      <TourStopIntro />
-      <TourStopContent className="mt-6">
+      </TourStopRight>
+      <TourStopLeft />
+      <TourStopMiddle className="mt-6">
         <TourParagraph>
           Join the Friends of Hoover Durant Public Library to celebrate the launch of this walking tour, and come share
           your story about the neighborhood! There will be food, music, and more!
@@ -87,7 +87,7 @@ export default function Home() {
             <dd>Friends of Hoover Durant Public Library</dd>
           </dl>
         </TourParagraph>
-      </TourStopContent>
+      </TourStopMiddle>
       <div></div>
     </TourStop>
   )
