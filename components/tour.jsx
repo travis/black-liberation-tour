@@ -135,7 +135,7 @@ export function TourNext({ href, children }) {
 }
 
 /** @param {import('../lib/data').MuralStop} props */
-export function MuralInfo({ artists = [], blurb = '', date = '', description = '' }) {
+export function MuralInfo({ artists = [], blurb = '', date = '', description = '', audio = '' }) {
   return (
     <>
       {artists.length ? (
@@ -173,6 +173,12 @@ export function MuralInfo({ artists = [], blurb = '', date = '', description = '
         <>
           <br />
           <span dangerouslySetInnerHTML={{ __html: description }}></span>
+        </>
+      )}
+      {audio && (
+        <>
+          <br />
+          <TourAudio src={audio} className="w-full" />
         </>
       )}
     </>
