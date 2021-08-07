@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { DownChevron, Close } from '../components/icons'
 import ContactSection from '../components/ContactSection'
 import SubscribeFollowSection from '../components/SubscribeFollowSection'
-import PinkButton from '../components/PinkButton'
 import DonateButton from '../components/DonateButton'
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
     <div className="<Home>">
       <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr bg-black text-white min-h-screen">
         <div className="py-24 px-24 md:py-12 md:px-12 bg-pink-dark relative sm:h-auto">
-          {/* This next/image position:relative  ^ requirement is just weird. */}
           <img src="/home-logo.png" className="object-contain w-full h-full absolute inset-0" />
         </div>
         <div>
@@ -83,17 +81,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={`bg-red flex flex-col justify-center items-start ${showMore && 'md:hidden xl:flex'}`}>
-          <Link href="/tour">
-            <a
-              className="no-underline block text-8xl md:text-3xl m-auto font-display border-white p-24 md:p-6"
-              style={{ borderWidth: 'var(--borderWidth)' }}
-            >
-              <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
-                Discover The Tour
-              </h3>
-            </a>
-          </Link>
+        <div className={`bg-red flex flex-col justify-evenly items-center ${showMore && 'md:hidden xl:flex'}`}>
+          <GoGoGo text="Discover The Walking Tour" href="/tour" />
+          <GoGoGo text="Discover The Mural Tour" href="/murals" />
         </div>
         <div
           className={`py-24 px-24 md:py-12 md:px-12 md:bg-black xl:bg-red-dark flex flex-col justify-center items-start ${
@@ -105,5 +95,20 @@ export default function Home() {
         </div>
       </main>
     </div>
+  )
+}
+
+function GoGoGo({ text, href }) {
+  return (
+    <Link href={href}>
+      <a
+        className="no-underline block text-7xl md:text-3xl m-0 font-display border-white p-24 md:p-6"
+        style={{ borderWidth: 'var(--borderWidth)' }}
+      >
+        <h3 className="border-white pb-3 uppercase" style={{ borderBottomWidth: 'var(--borderWidth)' }}>
+          {text}
+        </h3>
+      </a>
+    </Link>
   )
 }
