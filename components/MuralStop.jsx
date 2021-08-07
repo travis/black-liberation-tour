@@ -13,6 +13,7 @@ import {
   MuralStopLeft,
   MuralStopRight,
   MuralInfo,
+  TourParagraph,
 } from '../components/tour'
 
 /** @param {import('../lib/data').MuralStop} props */
@@ -53,6 +54,20 @@ export function MuralStop(props) {
       <MuralStopRight>
         <MuralInfo {...props}></MuralInfo>
       </MuralStopRight>
+
+      {/* /////////////////////////////////////////////////////////////// */}
+      {/* /////////////////////////////////////////////////////////////// */}
+      {props.supplement && (
+        <>
+          <TourStopLeft className="bg-white" />
+          <TourStopMiddle>
+            {props.supplement.map(p => (
+              <TourParagraph dangerouslySetInnerHTML={{ __html: p }} />
+            ))}
+          </TourStopMiddle>
+          <div></div>
+        </>
+      )}
 
       {/* /////////////////////////////////////////////////////////////// */}
       {/* /////////////////////////////////////////////////////////////// */}

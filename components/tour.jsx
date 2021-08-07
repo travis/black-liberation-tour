@@ -121,7 +121,11 @@ export function TourStopPhoto({ className = '', ...props }) {
 }
 
 export function TourParagraph(props) {
-  return <p className="my-24 md:my-10">{props.children}</p>
+  return (
+    <p className="my-24 md:my-10" {...props}>
+      {props.children}
+    </p>
+  )
 }
 
 export function TourNext({ href, children }) {
