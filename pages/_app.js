@@ -23,16 +23,33 @@ function MyApp({ Component, pageProps }) {
         <script src="/lib/jquery-2.2.4.min.js"></script>
         <script src="/lib/jquery.mosaicflow.min.js"></script>
 
+        <link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" rel="stylesheet" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+        <script
+          // Ugly dumb dangerouslySetInnerHTML!
+          dangerouslySetInnerHTML={{
+            __html: /*js*/ `
+              lightbox.option({
+                resizeDuration: 200,
+                fadeDuration: 200,
+                imageFadeDuration: 200,
+                wrapAround: true,
+              })
+            `,
+          }}
+        />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVMS731GQN" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            __html: /*js*/ `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-          gtag('config', 'G-PVMS731GQN');
-          `,
+              gtag('config', 'G-PVMS731GQN');
+            `,
           }}
         />
       </Head>

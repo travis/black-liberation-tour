@@ -69,7 +69,7 @@ export function TourAudio({ src, ...props }) {
 export function TourStop({ children }) {
   return (
     <>
-      <main className="grid grid-cols-1 lg:grid-cols-12 pb-24 lg:pb-0">{children}</main>
+      <main className="lg:grid grid-cols-1 lg:grid-cols-12 pb-24 lg:pb-0">{children}</main>
       <Footer />
     </>
   )
@@ -90,13 +90,15 @@ export function TourStopRight({ className = '', ...props }) {
 }
 
 export function MuralStopLeft({ className = '', ...props }) {
-  return <section className={`text-center bg-white col-span-9 lg:mt-10 lg:mb-5 lg:pl-10 ${className}`} {...props} />
+  return (
+    <section className={`text-center bg-white col-span-9 mt-24 lg:mt-10 lg:mb-5 lg:pl-10 ${className}`} {...props} />
+  )
 }
 
 export function MuralStopRight({ className = '', ...props }) {
   return (
     <section
-      className={`flex flex-col col-span-3 bg-pink ml-24 md:ml-10 lg:ml-0 lg:mt-10 lg:mb-5 lg:p-10 ${className}`}
+      className={`flex flex-col col-span-3 bg-pink px-24 py-24 md:py-10 md:pl-10  lg:ml-0 lg:mt-10 mb-24 lg:mb-5 lg:p-10 ${className}`}
       {...props}
     />
   )
@@ -111,7 +113,11 @@ export function TourStopPhotos({ children, className = '', ...props }) {
 }
 
 export function TourStopPhoto({ className = '', ...props }) {
-  return <img className={`TourStopPhoto w-full object-contain ${className}`} {...props} />
+  return (
+    <a href={props.src} data-lightbox="image-1">
+      <img className={`TourStopPhoto w-full object-contain ${className}`} {...props} />
+    </a>
+  )
 }
 
 export function TourParagraph(props) {
