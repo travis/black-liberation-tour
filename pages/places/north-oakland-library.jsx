@@ -26,8 +26,8 @@ export default function NorthOaklandLibrary() {
       <TourStopMiddle>
         <TourStopHeader
           name="North Oakland Branch Library"
-          location="30th and San Pablo"
-          from={tourStop['/places/ymca']}
+          location="3134 San Pablo Avenue"
+          from={tourStop['/places/black-liberation']}
           to={tourStop['/places/north-oakland-library']}
         />
         <TourParagraph>

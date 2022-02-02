@@ -29,7 +29,7 @@ export default function BlackLiberationMural() {
         <TourStopHeader
           name="Black Liberation Mural"
           location="Market Street at 30th and San Pablo"
-          from={tourStop['/places/st-augustines']}
+          from={tourStop['/places/ymca']}
           to={tourStop['/places/black-liberation']}
         />
 
