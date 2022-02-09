@@ -18,9 +18,8 @@ export default function Home() {
           <img src="/places/CA-hotel.jpg" className="object-cover w-full h-full block" />
         </div>
         <div
-          className={`py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start ${
-            showMore && 'row-span-2'
-          }`}
+          className={`py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start ${showMore && 'row-span-2'
+            }`}
         >
           <h4 className="uppercase text-8xl md:text-xl font-bold mb-24 md:mb-6">Black Spaces Matter.</h4>
           <p className="mb-24 md:mb-6">
@@ -56,11 +55,13 @@ export default function Home() {
           <img className="absolute top-0 left-0 w-full h-full" src="/flags.svg" />
           <div className="absolute top-0 left-0 w-full h-full py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start">
             <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
-              Black Liberation Walking <br />
-              Tour Mural Unveiling
+              Black History Month Celebration
             </h3>
             <p className="mb-24 md:mb-6">
-              Join us on August 7th for the unveiling of the new Black Liberation Walking Tour mural
+              Join us in the Hoover Elementary School Garden for a Black History Month garden workday and celebration!<br />
+              Saturday, March 5<br />
+              11AM - 2 PM<br />
+              Enter on 33rd & West<br />
             </p>
             <DonateButton className="w-5/6 md:w-3/4" />
             <div className="hidden md:flex-grow mb-24 md:mb-6" />
@@ -72,12 +73,12 @@ export default function Home() {
             </p>
             {/* prettier-ignore */}
             <p>
-                <a className="inline-block pr-5" href="https://communityvisionca.org/">Community Vision</a>
-                <a className="inline-block pr-5" href="https://www.penumbrainc.com/">Penumbra</a>
-                <a className="inline-block pr-5" href="https://ebaldc.org/">EBALDC</a>
-                <a className="inline-block pr-5" href="https://www.theflourishcollective.org/">Flourish Collective</a>
-                <a className="inline-block pr-5" href="https://www.mlb.com/athletics">Oakland Athletics</a>
-                <a className="inline-block pr-5" href="https://www.nba.com/warriors/">Golden State Warriors</a>
+              <a className="inline-block pr-5" href="https://communityvisionca.org/">Community Vision</a>
+              <a className="inline-block pr-5" href="https://www.penumbrainc.com/">Penumbra</a>
+              <a className="inline-block pr-5" href="https://ebaldc.org/">EBALDC</a>
+              <a className="inline-block pr-5" href="https://www.theflourishcollective.org/">Flourish Collective</a>
+              <a className="inline-block pr-5" href="https://www.mlb.com/athletics">Oakland Athletics</a>
+              <a className="inline-block pr-5" href="https://www.nba.com/warriors/">Golden State Warriors</a>
             </p>
           </div>
         </div>
@@ -86,9 +87,8 @@ export default function Home() {
           <GoGoGo text="Discover The Mural Tour" href="/murals" />
         </div>
         <div
-          className={`py-24 px-24 md:py-12 md:px-12 md:bg-black xl:bg-red-dark flex flex-col justify-center items-start ${
-            showMore && 'xl:hidden'
-          }`}
+          className={`py-24 px-24 md:py-12 md:px-12 md:bg-black xl:bg-red-dark flex flex-col justify-center items-start ${showMore && 'xl:hidden'
+            }`}
         >
           <ContactSection />
           <SubscribeFollowSection />
