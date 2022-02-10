@@ -27,7 +27,7 @@ export default function NorthOaklandLibrary() {
         <TourStopHeader
           name="North Oakland Branch Library"
           location="3134 San Pablo Avenue"
-          from={tourStop['/places/black-liberation']}
+          from={tourStop['/places/flints']}
           to={tourStop['/places/north-oakland-library']}
         />
         <TourParagraph>
@@ -68,7 +68,7 @@ export default function NorthOaklandLibrary() {
         <TourAudio className="my-12" src="/audio/north-oakland-library.mp3" />
       </TourStopRight>
       <TourStopLeft />
-      <TourNext href="/places/flints">Flint's BBQ</TourNext>
+      <TourNext href="/places/california-hotel">California Hotel</TourNext>
       <div></div>
     </TourStop>
   )

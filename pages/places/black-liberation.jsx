@@ -87,7 +87,7 @@ export default function BlackLiberationMural() {
               href="https://oaklandwiki.org/St._Augustine%27s_Episcopal_Church">St.
             Augustine’s Episcopal Church</a>. Below her is <a
               href="https://oaklandwiki.org/C._L._Dellums">C.L. Dellums</a>, who lived
-          only a few blocks from here while he was leading an effort to organize the
+          only a few blocks from here while he was leading an effort to organize the&nbsp;
           <a
             href="https://oaklandwiki.org/Brotherhood_of_Sleeping_Car_Porters">Brotherhood
             of Sleeping Car Porters</a>, America’s first nationwide Black union.
@@ -103,7 +103,7 @@ export default function BlackLiberationMural() {
       </TourStopRight>
 
       <TourStopLeft />
-      <TourNext href="/places/north-oakland-library">North Oakland Branch Library</TourNext>
+      <TourNext href="/places/flints">Flint's BBQ</TourNext>
       <div></div>
     </TourStop>
   )
