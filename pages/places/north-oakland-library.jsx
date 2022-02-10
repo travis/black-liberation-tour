@@ -36,7 +36,7 @@ export default function NorthOaklandLibrary() {
           North Oakland Branch Library, near the California Hotel, or the smaller Telegrove Branch Library.
           Unfortunately, the Telegrove Branch closed down and then the North Oakland Branch finally shut its doors
           permanently in 1981, after changing locations several times. Its final location was 3134 San Pablo Avenue,
-          just up the block from where you’re standing right now.
+          where you’re standing right now.
         </TourParagraph>
 
         <TourParagraph>
