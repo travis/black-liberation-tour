@@ -75,7 +75,7 @@ export default function Home() {
         <TourAudio className="my-12" src="/audio/ymca.mp3" />
       </TourStopRight>
       <TourStopLeft />
-      <TourNext href="/places/north-oakland-library">North Oakland Branch Library</TourNext>
+      <TourNext href="/places/black-liberation">Black Liberation Mural</TourNext>
       <div></div>
     </TourStop>
   )

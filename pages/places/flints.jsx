@@ -27,7 +27,7 @@ export default function Home() {
         <TourStopHeader
           name="Flint's BBQ"
           location="3114 San Pablo Ave"
-          from={tourStop['/places/north-oakland-library']}
+          from={tourStop['/places/black-liberation']}
           to={tourStop['/places/flints']}
         />
         <TourParagraph>
@@ -73,7 +73,8 @@ export default function Home() {
         <TourAudio className="my-12" src="/audio/flints.mp3" />
       </TourStopRight>
       <TourStopLeft />
-      <TourNext href="/places/california-hotel">California Hotel</TourNext>
+      <TourNext href="/places/north-oakland-library">North Oakland Branch Library</TourNext>
+
       <div></div>
     </TourStop>
   )

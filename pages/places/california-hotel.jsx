@@ -25,7 +25,7 @@ export default function Home() {
         <TourStopHeader
           name="California Hotel"
           location="35th and San Pablo"
-          from={tourStop['/places/flints']}
+          from={tourStop['/places/north-oakland-library']}
           to={tourStop['/places/california-hotel']}
         />
         <TourParagraph>

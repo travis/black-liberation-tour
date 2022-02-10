@@ -26,8 +26,8 @@ export default function NorthOaklandLibrary() {
       <TourStopMiddle>
         <TourStopHeader
           name="North Oakland Branch Library"
-          location="30th and San Pablo"
-          from={tourStop['/places/ymca']}
+          location="3134 San Pablo Avenue"
+          from={tourStop['/places/flints']}
           to={tourStop['/places/north-oakland-library']}
         />
         <TourParagraph>
@@ -36,7 +36,7 @@ export default function NorthOaklandLibrary() {
           North Oakland Branch Library, near the California Hotel, or the smaller Telegrove Branch Library.
           Unfortunately, the Telegrove Branch closed down and then the North Oakland Branch finally shut its doors
           permanently in 1981, after changing locations several times. Its final location was 3134 San Pablo Avenue,
-          just up the block from where you’re standing right now.
+          where you’re standing right now.
         </TourParagraph>
 
         <TourParagraph>
@@ -68,7 +68,7 @@ export default function NorthOaklandLibrary() {
         <TourAudio className="my-12" src="/audio/north-oakland-library.mp3" />
       </TourStopRight>
       <TourStopLeft />
-      <TourNext href="/places/flints">Flint's BBQ</TourNext>
+      <TourNext href="/places/california-hotel">California Hotel</TourNext>
       <div></div>
     </TourStop>
   )
