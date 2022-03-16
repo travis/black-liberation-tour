@@ -54,6 +54,7 @@ export default function Home() {
         <div className={` bg-red-dark relative`} style={{ background: 'url(/flags.svg)', backgroundSize: 'cover' }}>
           <img className="absolute top-0 left-0 w-full h-full" src="/flags.svg" />
           <div className="absolute top-0 left-0 w-full h-full py-24 px-24 md:py-12 md:px-12 flex flex-col justify-center items-start">
+            {/* commenting out for now to leave space for future event announcements
             <h3 className="text-8xl md:text-xl mb-24 md:mb-6 uppercase font-bold">
               Black History Month Celebration
             </h3>
@@ -63,6 +64,7 @@ export default function Home() {
               11AM - 2 PM<br />
               Enter on 33rd & West<br />
             </p>
+             */}
             <DonateButton className="w-5/6 md:w-3/4" />
             <div className="hidden md:flex-grow mb-24 md:mb-6" />
             <br />
@@ -79,6 +81,7 @@ export default function Home() {
               <a className="inline-block pr-5" href="https://www.theflourishcollective.org/">Flourish Collective</a>
               <a className="inline-block pr-5" href="https://www.mlb.com/athletics">Oakland Athletics</a>
               <a className="inline-block pr-5" href="https://www.nba.com/warriors/">Golden State Warriors</a>
+              <a className="inline-block pr-5" href="https://www.oaklandrootssc.com/">Oakland Roots Sports Club</a>
             </p>
           </div>
         </div>
